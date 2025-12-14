@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import AIChatbot from "@/components/AIChatbot";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <WhyChooseUs />
       <Contact />
       <Footer />
+      <AIChatbot />
     </main>
   );
 };
