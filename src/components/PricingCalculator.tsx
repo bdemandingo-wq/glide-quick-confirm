@@ -11,7 +11,6 @@ const serviceTypes = [
   { value: "standard", label: "Standard Cleaning", basePrice: 150 },
   { value: "deep", label: "Deep Cleaning", basePrice: 250 },
   { value: "moveinout", label: "Move In/Out Cleaning", basePrice: 300 },
-  { value: "commercial", label: "Commercial Cleaning", basePrice: 400 },
 ];
 
 const frequencies = [
