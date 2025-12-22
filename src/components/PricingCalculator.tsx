@@ -8,9 +8,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 
 const serviceTypes = [
-  { value: "standard", label: "Standard Cleaning", basePrice: 100 },
-  { value: "deep", label: "Deep Cleaning", basePrice: 200 },
-  { value: "moveinout", label: "Move In/Out Cleaning", basePrice: 250 },
+  { value: "standard", label: "Standard Cleaning", basePrice: 142 },
+  { value: "deep", label: "Deep Cleaning", basePrice: 209 },
+  { value: "moveinout", label: "Move In/Out Cleaning", basePrice: 259 },
 ];
 
 const frequencies = [
