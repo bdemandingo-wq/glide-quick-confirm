@@ -1,10 +1,92 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import SEOSchema from "@/components/seo/SEOSchema";
 import StickyCallButton from "@/components/seo/StickyCallButton";
 
 const Sitemap = () => {
+  const baseUrl = "https://tidywisecleaning.com";
+  
+  // Schema markup for sitemap page (SiteNavigationElement)
+  const sitemapSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Sitemap | TIDYWISE Cleaning Services",
+    "description": "Complete sitemap for TIDYWISE Cleaning Services. Find all our service pages, city locations, and helpful blog articles.",
+    "url": `${baseUrl}/sitemap`,
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "SiteNavigationElement",
+          "position": 1,
+          "name": "Home",
+          "url": baseUrl
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 2,
+          "name": "Standard Cleaning",
+          "url": `${baseUrl}/standard-cleaning`
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 3,
+          "name": "Deep Cleaning",
+          "url": `${baseUrl}/deep-cleaning`
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 4,
+          "name": "Move In/Out Cleaning",
+          "url": `${baseUrl}/move-in-out-cleaning`
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 5,
+          "name": "Service Areas",
+          "url": `${baseUrl}/service-areas`
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 6,
+          "name": "Blog",
+          "url": `${baseUrl}/blog`
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 7,
+          "name": "FAQ",
+          "url": `${baseUrl}/faq`
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "position": 8,
+          "name": "Book a Cleaning",
+          "url": `${baseUrl}/booking`
+        }
+      ]
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": baseUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Sitemap",
+        "item": `${baseUrl}/sitemap`
+      }
+    ]
+  };
   const services = [
     { name: "Standard Cleaning", path: "/standard-cleaning" },
     { name: "Deep Cleaning", path: "/deep-cleaning" },
@@ -101,13 +183,18 @@ const Sitemap = () => {
 
   return (
     <>
-      <SEOSchema
-        pageTitle="Sitemap | TIDYWISE Cleaning Services"
-        pageDescription="Complete sitemap for TIDYWISE Cleaning Services. Find all our service pages, city locations, and helpful blog articles."
-        canonicalUrl="https://tidywisecleaning.com/sitemap"
-        pageType="service"
-        county="South Florida"
-      />
+      <Helmet>
+        <title>Sitemap | TIDYWISE Cleaning Services</title>
+        <meta name="description" content="Complete sitemap for TIDYWISE Cleaning Services. Find all our service pages, city locations, and helpful blog articles." />
+        <link rel="canonical" href={`${baseUrl}/sitemap`} />
+        <meta name="robots" content="index, follow" />
+        <script type="application/ld+json">
+          {JSON.stringify(sitemapSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
       <main className="min-h-screen">
         <Navbar />
         
