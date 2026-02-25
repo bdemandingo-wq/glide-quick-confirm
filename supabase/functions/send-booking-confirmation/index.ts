@@ -4,6 +4,7 @@ import { z } from "https://deno.land/x/zod@v3.22.4/mod.ts";
 const OPENPHONE_API_KEY = Deno.env.get("OPENPHONE_API_KEY");
 const OPENPHONE_PHONE_NUMBER_ID = "PNr7XukuaV";
 const ADMIN_PHONE_NUMBER = "+15615718725";
+const PERSONAL_PHONE_NUMBER = "+18137356859";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -70,6 +71,19 @@ serve(async (req) => {
       console.error("Admin SMS error:", await adminRes.text());
     } else {
       console.log("Admin SMS sent");
+    }
+
+    // Send to personal number
+    const personalRes = await fetch("https://api.openphone.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: OPENPHONE_API_KEY },
+      body: JSON.stringify({ content: adminSms, from: OPENPHONE_PHONE_NUMBER_ID, to: [PERSONAL_PHONE_NUMBER] }),
+    });
+
+    if (!personalRes.ok) {
+      console.error("Personal SMS error:", await personalRes.text());
+    } else {
+      console.log("Personal SMS sent");
     }
 
     // SMS to customer
