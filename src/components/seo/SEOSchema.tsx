@@ -192,7 +192,54 @@ const SEOSchema = ({
     ]
   } : null;
 
-  return (
+  const blogPostingSchema = pageType === 'blog' ? {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": pageTitle,
+    "description": pageDescription,
+    "url": canonicalUrl,
+    "image": `${website}/og-image.webp`,
+    "datePublished": blogMeta?.datePublished || "2025-01-15",
+    "dateModified": blogMeta?.dateModified || blogMeta?.datePublished || "2025-01-15",
+    "author": {
+      "@type": "Organization",
+      "name": businessName,
+      "url": website
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": businessName,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${website}/logo.webp`
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalUrl
+    },
+    ...(blogMeta?.category && { "articleSection": blogMeta.category }),
+    ...(blogMeta?.readTime && { "timeRequired": `PT${blogMeta.readTime.replace(/\D/g, '')}M` })
+  } : null;
+
+  const serviceSchema = pageType === 'service' ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": pageTitle.replace(' | TIDYWISE', ''),
+    "description": pageDescription,
+    "url": canonicalUrl,
+    "provider": {
+      "@type": "LocalBusiness",
+      "@id": `${website}/#organization`
+    },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Broward County, Florida" },
+      { "@type": "AdministrativeArea", "name": "Miami-Dade County, Florida" },
+      { "@type": "AdministrativeArea", "name": "Palm Beach County, Florida" }
+    ]
+  } : null;
+
+
     <Helmet>
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
