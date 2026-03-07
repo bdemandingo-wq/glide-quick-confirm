@@ -6,6 +6,13 @@ interface SEOSchemaProps {
   canonicalUrl: string;
   pageType?: 'home' | 'county' | 'blog' | 'service';
   county?: string;
+  /** Blog-specific fields for BlogPosting schema */
+  blogMeta?: {
+    datePublished?: string;
+    dateModified?: string;
+    readTime?: string;
+    category?: string;
+  };
 }
 
 const SEOSchema = ({ 
