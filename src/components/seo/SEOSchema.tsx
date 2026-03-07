@@ -20,7 +20,8 @@ const SEOSchema = ({
   pageDescription, 
   canonicalUrl,
   pageType = 'home',
-  county
+  county,
+  blogMeta
 }: SEOSchemaProps) => {
   const businessName = "TIDYWISE Cleaning Services";
   const businessAddress = {
