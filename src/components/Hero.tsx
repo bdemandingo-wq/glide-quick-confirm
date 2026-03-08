@@ -27,7 +27,7 @@ const Hero = () => {
           {/* Left — Copy + CTAs */}
           <div className="space-y-6 opacity-0 animate-fade-in">
             {/* Trust indicator - green */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary border border-secondary/20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 text-secondary border border-secondary/30">
               <span className="relative flex h-2 w-2" aria-hidden="true">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
@@ -35,20 +35,20 @@ const Hero = () => {
               <span className="text-sm font-medium">Booking Available Today</span>
             </div>
 
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Your Home Deserves Better Than Average.
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
+            <p className="text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
               TIDYWISE delivers professional home cleaning across Fort Lauderdale, Boca Raton, West Palm Beach, Miami & 30+ South Florida cities — with transparent pricing, vetted cleaners, and a satisfaction guarantee.
             </p>
 
-            {/* Trust pills - blue */}
+            {/* Trust pills */}
             <div className="flex flex-wrap gap-2">
               {trustPills.map((pill) => (
                 <div
                   key={pill.label}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium text-primary shadow-soft"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/15 border border-white/25 text-sm font-medium text-white shadow-soft"
                 >
                   <pill.icon className="w-4 h-4" aria-hidden="true" />
                   <span>{pill.label}</span>
