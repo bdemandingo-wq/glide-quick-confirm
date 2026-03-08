@@ -45,7 +45,7 @@ const Index = () => {
         <Services />
         <LazySection minHeight={350}><HowItWorks /></LazySection>
         <PricingCalculator />
-        <LazySection minHeight={200}><ComparisonTable /></LazySection>
+        
         <LazySection minHeight={400}><WhyChooseUs /></LazySection>
         <LazySection minHeight={400}><Testimonials /></LazySection>
         <LazySection minHeight={400}><HomeFAQ /></LazySection>
