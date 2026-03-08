@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 // Lazy load below-the-fold components
 const HowItWorks = lazy(() => import("@/components/HowItWorks"));
-const ComparisonTable = lazy(() => import("@/components/ComparisonTable"));
+
 const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs"));
 const Testimonials = lazy(() => import("@/components/Testimonials"));
 const HomeFAQ = lazy(() => import("@/components/HomeFAQ"));
