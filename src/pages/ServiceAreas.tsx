@@ -68,14 +68,38 @@ const serviceAreas = {
 };
 
 const ServiceAreas = () => {
+  // Build ItemList schema for all cities
+  const allCities = [
+    ...serviceAreas.broward.cities,
+    ...serviceAreas.palmBeach.cities,
+    ...serviceAreas.miamiDade.cities,
+  ];
+
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "TIDYWISE Service Areas in South Florida",
+    "description": "Complete list of cities served by TIDYWISE cleaning services",
+    "numberOfItems": allCities.length,
+    "itemListElement": allCities.map((city, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": `${city.name} Cleaning Services`,
+      "url": `https://tidywisecleaning.com${city.link}`
+    }))
+  };
+
   return (
     <>
       <SEOSchema
-        pageTitle="Service Areas | Cleaning Services in South Florida | TIDYWISE"
-        pageDescription="TIDYWISE serves 40+ cities across Broward, Palm Beach, and Miami-Dade counties. Find professional cleaning services near you. Call (561) 571-8725!"
+        pageTitle="House Cleaning Near Me South Florida | 40+ Cities | TIDYWISE"
+        pageDescription="Looking for house cleaning near me? TIDYWISE serves 40+ cities across Broward, Palm Beach & Miami-Dade counties. Find your city for local pricing. Call (561) 571-8725."
         canonicalUrl="https://tidywisecleaning.com/service-areas"
-        pageType="home"
-        county="South Florida"
+        pageType="service"
+        breadcrumbs={[
+          { name: "Home", url: "https://tidywisecleaning.com" },
+          { name: "Service Areas", url: "https://tidywisecleaning.com/service-areas" }
+        ]}
       />
       <main className="min-h-screen">
         <Navbar />
