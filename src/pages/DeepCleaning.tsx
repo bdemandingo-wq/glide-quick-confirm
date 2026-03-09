@@ -188,6 +188,7 @@ const DeepCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/deep-cleaning" pageType="service" />
         <Footer />
         <StickyCallButton />
       </main>

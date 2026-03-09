@@ -209,6 +209,7 @@ const UpholsteryCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/upholstery-cleaning" pageType="service" />
         <Footer />
         <StickyCallButton />
       </main>

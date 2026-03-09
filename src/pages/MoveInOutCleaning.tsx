@@ -240,6 +240,7 @@ const MoveInOutCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/move-in-out-cleaning" pageType="service" />
         <Footer />
         <StickyCallButton />
       </main>

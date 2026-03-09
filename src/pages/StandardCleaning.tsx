@@ -237,6 +237,7 @@ const StandardCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/standard-cleaning" pageType="service" />
         <Footer />
         <StickyCallButton />
       </main>
