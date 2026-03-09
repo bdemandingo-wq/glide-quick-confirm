@@ -78,6 +78,7 @@ const CoralGablesCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/coral-gables-cleaning" pageType="city" cityName="Coral Gables" />
         <Footer />
       </main>
     </>

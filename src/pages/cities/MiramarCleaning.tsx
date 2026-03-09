@@ -78,6 +78,7 @@ const MiramarCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/miramar-cleaning" pageType="city" cityName="Miramar" />
         <Footer />
       </main>
     </>

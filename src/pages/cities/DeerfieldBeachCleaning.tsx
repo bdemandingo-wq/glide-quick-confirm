@@ -78,6 +78,7 @@ const DeerfieldBeachCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/deerfield-beach-cleaning" pageType="city" cityName="Deerfield Beach" />
         <Footer />
       </main>
     </>

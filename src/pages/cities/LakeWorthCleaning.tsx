@@ -78,6 +78,7 @@ const LakeWorthCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/lake-worth-cleaning" pageType="city" cityName="Lake Worth" />
         <Footer />
       </main>
     </>

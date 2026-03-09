@@ -78,6 +78,7 @@ const DelrayBeachCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/delray-beach-cleaning" pageType="city" cityName="Delray Beach" />
         <Footer />
       </main>
     </>

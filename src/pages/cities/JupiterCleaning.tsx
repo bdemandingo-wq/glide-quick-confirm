@@ -78,6 +78,7 @@ const JupiterCleaning = () => {
           </div>
         </section>
 
+        <RelatedLinks currentPage="/jupiter-cleaning" pageType="city" cityName="Jupiter" />
         <Footer />
       </main>
     </>
