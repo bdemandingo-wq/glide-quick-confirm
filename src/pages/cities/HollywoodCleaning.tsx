@@ -137,11 +137,7 @@ const HollywoodCleaning = () => {
           </div>
         </section>
 
-        <CityPageNavigation 
-          currentCity="Hollywood"
-          county="broward"
-        />
-
+        <RelatedLinks currentPage="/hollywood-cleaning" pageType="city" cityName="Hollywood" />
         <Footer />
       </main>
     </>

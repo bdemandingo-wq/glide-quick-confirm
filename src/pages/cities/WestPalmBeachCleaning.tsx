@@ -137,11 +137,7 @@ const WestPalmBeachCleaning = () => {
           </div>
         </section>
 
-        <CityPageNavigation 
-          currentCity="West Palm Beach"
-          county="palm-beach"
-        />
-
+        <RelatedLinks currentPage="/west-palm-beach-cleaning" pageType="city" cityName="West Palm Beach" />
         <Footer />
       </main>
     </>

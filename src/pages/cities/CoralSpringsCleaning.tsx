@@ -137,11 +137,7 @@ const CoralSpringsCleaning = () => {
           </div>
         </section>
 
-        <CityPageNavigation 
-          currentCity="Coral Springs"
-          county="broward"
-        />
-
+        <RelatedLinks currentPage="/coral-springs-cleaning" pageType="city" cityName="Coral Springs" />
         <Footer />
       </main>
     </>
