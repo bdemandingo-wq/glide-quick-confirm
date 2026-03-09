@@ -154,6 +154,8 @@ const DeepCleaningVsStandardCleaning = () => {
           </div>
         </article>
 
+        <AuthorBio />
+        <RelatedLinks currentPage="/blog/deep-cleaning-vs-standard-cleaning" pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>
