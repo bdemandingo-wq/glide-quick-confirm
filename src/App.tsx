@@ -102,6 +102,9 @@ const CarpetCleaning = lazy(() => import("./pages/CarpetCleaning"));
 const UpholsteryCleaning = lazy(() => import("./pages/UpholsteryCleaning"));
 const ReferralProgram = lazy(() => import("./pages/ReferralProgram"));
 const ContractorRateSheet = lazy(() => import("./pages/ContractorRateSheet"));
+const AirbnbCleaning = lazy(() => import("./pages/AirbnbCleaning"));
+const OfficeCleaning = lazy(() => import("./pages/OfficeCleaning"));
+const PostConstructionCleaning = lazy(() => import("./pages/PostConstructionCleaning"));
 const Sitemap = lazy(() => import("./pages/Sitemap"));
 
 const queryClient = new QueryClient();
