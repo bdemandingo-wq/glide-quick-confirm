@@ -414,6 +414,7 @@ const CleanerApplication = () => {
         </Card>
       </main>
     </div>
+    </>
   );
 };
 
