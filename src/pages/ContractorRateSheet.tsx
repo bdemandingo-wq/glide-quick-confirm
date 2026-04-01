@@ -1,3 +1,4 @@
+import SEOHead from "@/components/seo/SEOHead";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
