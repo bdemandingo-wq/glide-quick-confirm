@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SEOHead from "@/components/seo/SEOHead";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
@@ -92,6 +93,13 @@ const CustomerPortal = () => {
   }
 
   return (
+    <>
+      <SEOHead
+        title="My Bookings | TIDYWISE"
+        description="View and manage your TIDYWISE cleaning service bookings. Track upcoming and past appointments."
+        canonical="https://tidywisecleaning.com/my-bookings"
+        noIndex={true}
+      />
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="bg-background border-b border-border sticky top-0 z-50">
@@ -268,6 +276,7 @@ const CustomerPortal = () => {
         </Card>
       </main>
     </div>
+    </>
   );
 };
 

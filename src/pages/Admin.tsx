@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import SEOHead from "@/components/seo/SEOHead";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/contexts/AuthContext";
@@ -238,6 +239,13 @@ const Admin = () => {
   };
 
   return (
+    <>
+      <SEOHead
+        title="Admin Dashboard | TIDYWISE"
+        description="TIDYWISE admin dashboard for managing bookings, applications, and business operations."
+        canonical="https://tidywisecleaning.com/admin"
+        noIndex={true}
+      />
     <div className="min-h-screen bg-muted">
       {/* Header */}
       <header className="bg-background border-b border-border sticky top-0 z-50">
@@ -490,6 +498,7 @@ const Admin = () => {
         </Tabs>
       </main>
     </div>
+    </>
   );
 };
 
