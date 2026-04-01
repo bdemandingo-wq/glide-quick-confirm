@@ -174,6 +174,12 @@ const CleanerApplication = () => {
   };
 
   return (
+    <>
+      <SEOHead
+        title="Join Our Cleaning Team | Apply Now | TIDYWISE"
+        description="Apply to become a TIDYWISE cleaner. Flexible schedule, competitive pay. Serving Broward, Miami-Dade & Palm Beach County."
+        canonical="https://tidywisecleaning.com/apply"
+      />
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="bg-background border-b border-border sticky top-0 z-50">
