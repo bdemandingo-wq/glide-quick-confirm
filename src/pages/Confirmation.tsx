@@ -27,19 +27,6 @@ const Confirmation = () => {
   const navigate = useNavigate();
   const booking = location.state as BookingState | null;
 
-  if (!booking) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-muted">
-        <Card className="max-w-md mx-4">
-          <CardContent className="p-8 text-center">
-            <p className="text-muted-foreground mb-4">No booking information found.</p>
-            <Button onClick={() => navigate("/")}>Return to Home</Button>
-          </CardContent>
-        </Card>
-      </div>
-    );
-  }
-
   return (
     <>
       <SEOHead
@@ -48,6 +35,17 @@ const Confirmation = () => {
         canonical="https://tidywisecleaning.com/confirmation"
         noIndex={true}
       />
+      {!booking ? (
+        <div className="min-h-screen flex items-center justify-center bg-muted">
+          <Card className="max-w-md mx-4">
+            <CardContent className="p-8 text-center">
+              <h1 className="text-xl font-bold mb-2">Booking Confirmation</h1>
+              <p className="text-muted-foreground mb-4">No booking information found.</p>
+              <Button onClick={() => navigate("/")}>Return to Home</Button>
+            </CardContent>
+          </Card>
+        </div>
+      ) : (
     <div className="min-h-screen bg-muted flex items-center justify-center py-12 px-4">
       <Card className="max-w-lg w-full shadow-elevated animate-scale-in">
         <CardContent className="p-8">
@@ -160,6 +158,7 @@ const Confirmation = () => {
         </CardContent>
       </Card>
     </div>
+      )}
     </>
   );
 };
