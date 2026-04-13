@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
 import ScrollToHash from "@/components/ScrollToHash";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { HelmetProvider } from "react-helmet-async";
@@ -90,6 +90,12 @@ const MoldPreventionFlorida = lazy(() => import("./pages/blog/MoldPreventionFlor
 const CondoCleaningRules = lazy(() => import("./pages/blog/CondoCleaningRules"));
 const PostConstructionCleaningGuide = lazy(() => import("./pages/blog/PostConstructionCleaningGuide"));
 const AiBlogPost = lazy(() => import("./pages/blog/AiBlogPost"));
+
+// Redirect component for old /blog/ai/:slug URLs
+const AiBlogPostRedirect = () => {
+  const { slug } = useParams<{ slug: string }>();
+  return <Navigate to={`/blog/${slug || ''}`} replace />;
+};
 
 // New pages
 const Blog = lazy(() => import("./pages/Blog"));
@@ -215,8 +221,11 @@ const AppRoutes = () => {
         <Route path="/blog/condo-cleaning-rules-south-florida" element={<CondoCleaningRules />} />
         <Route path="/blog/post-construction-cleaning-guide" element={<PostConstructionCleaningGuide />} />
         
-        {/* AI-Generated Blog Posts */}
-        <Route path="/blog/ai/:slug" element={<AiBlogPost />} />
+        {/* Redirect old /blog/ai/ URLs to /blog/ */}
+        <Route path="/blog/ai/:slug" element={<AiBlogPostRedirect />} />
+
+        {/* Dynamic Blog Posts */}
+        <Route path="/blog/:slug" element={<AiBlogPost />} />
         
         <Route path="*" element={<NotFound />} />
       </Routes>

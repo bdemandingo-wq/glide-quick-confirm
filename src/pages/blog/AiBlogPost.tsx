@@ -79,7 +79,7 @@ const AiBlogPost = () => {
       <SEOSchema
         pageTitle={`${post.title} | TIDYWISE`}
         pageDescription={post.excerpt}
-        canonicalUrl={`https://tidywisecleaning.com/blog/ai/${slug}`}
+        canonicalUrl={`https://www.tidywisecleaning.com/blog/${slug}`}
         pageType="blog"
         county="South Florida"
       />
@@ -147,7 +147,7 @@ const AiBlogPost = () => {
         </article>
 
         <AuthorBio />
-        <RelatedLinks currentPage={`/blog/ai/${slug}`} pageType="blog" />
+        <RelatedLinks currentPage={`/blog/${slug}`} pageType="blog" />
         <Footer />
         <StickyCallButton />
       </main>

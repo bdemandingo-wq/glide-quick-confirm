@@ -13,10 +13,22 @@ User-agent: facebookexternalhit
 Allow: /
 
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
 
 User-agent: CCBot
 Disallow: /
@@ -32,4 +44,4 @@ Disallow: /confirmation
 Disallow: /*?*
 Disallow: /*.json$
 
-Sitemap: https://tidywisecleaning.com/sitemap.xml
+Sitemap: https://www.tidywisecleaning.com/sitemap.xml
