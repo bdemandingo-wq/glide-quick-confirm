@@ -231,4 +231,37 @@
       <news:title>Move-Out Cleaning in Boca Raton FL — Get Your Deposit Back</news:title>
     </news:news>
   </url>
+  <url>
+    <loc>https://www.tidywisecleaning.com/blog/house-cleaning-west-palm-beach</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication><news:name>TIDYWISE Cleaning Blog</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-04-13</news:publication_date>
+      <news:title>House Cleaning in West Palm Beach FL — Pricing, Services and How to Book</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.tidywisecleaning.com/blog/airbnb-cleaning-fort-lauderdale</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication><news:name>TIDYWISE Cleaning Blog</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-04-13</news:publication_date>
+      <news:title>Airbnb Cleaning in Fort Lauderdale FL — Turnover Cleaning for STR Hosts</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.tidywisecleaning.com/blog/move-in-cleaning-miami</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication><news:name>TIDYWISE Cleaning Blog</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-04-13</news:publication_date>
+      <news:title>Move-In Cleaning in Miami FL — Start Fresh in Your New Home</news:title>
+    </news:news>
+  </url>
 </urlset>

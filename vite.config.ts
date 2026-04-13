@@ -111,6 +111,9 @@ const PRERENDER_ROUTES = [
   "/blog/house-cleaning-fort-lauderdale",
   "/blog/deep-cleaning-service-miami",
   "/blog/move-out-cleaning-boca-raton",
+  "/blog/house-cleaning-west-palm-beach",
+  "/blog/airbnb-cleaning-fort-lauderdale",
+  "/blog/move-in-cleaning-miami",
 
   // Competitor comparison pages (highest AI citation value)
   "/molly-maid-alternative",
