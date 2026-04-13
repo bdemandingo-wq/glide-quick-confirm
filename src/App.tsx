@@ -127,6 +127,11 @@ const HouseCleaningJupiter = lazy(() => import("./pages/blog/HouseCleaningJupite
 const HouseCleaningPalmBeachGardens = lazy(() => import("./pages/blog/HouseCleaningPalmBeachGardens"));
 const HouseCleaningMiramar = lazy(() => import("./pages/blog/HouseCleaningMiramar"));
 const HouseCleaningHialeah = lazy(() => import("./pages/blog/HouseCleaningHialeah"));
+const HouseCleaningDavie = lazy(() => import("./pages/blog/HouseCleaningDavie"));
+const HouseCleaningHallandaleBeach = lazy(() => import("./pages/blog/HouseCleaningHallandaleBeach"));
+const HouseCleaningSunnyIslesBeach = lazy(() => import("./pages/blog/HouseCleaningSunnyIslesBeach"));
+const HouseCleaningBoyntonBeach = lazy(() => import("./pages/blog/HouseCleaningBoyntonBeach"));
+const HouseCleaningWellington = lazy(() => import("./pages/blog/HouseCleaningWellington"));
 
 // Redirect component for old /blog/ai/:slug URLs
 const AiBlogPostRedirect = () => {
@@ -294,6 +299,11 @@ const AppRoutes = () => {
         <Route path="/blog/house-cleaning-palm-beach-gardens" element={<HouseCleaningPalmBeachGardens />} />
         <Route path="/blog/house-cleaning-miramar" element={<HouseCleaningMiramar />} />
         <Route path="/blog/house-cleaning-hialeah" element={<HouseCleaningHialeah />} />
+        <Route path="/blog/house-cleaning-davie" element={<HouseCleaningDavie />} />
+        <Route path="/blog/house-cleaning-hallandale-beach" element={<HouseCleaningHallandaleBeach />} />
+        <Route path="/blog/house-cleaning-sunny-isles-beach" element={<HouseCleaningSunnyIslesBeach />} />
+        <Route path="/blog/house-cleaning-boynton-beach" element={<HouseCleaningBoyntonBeach />} />
+        <Route path="/blog/house-cleaning-wellington" element={<HouseCleaningWellington />} />
 
         {/* Redirect old /blog/ai/ URLs to /blog/ */}
         <Route path="/blog/ai/:slug" element={<AiBlogPostRedirect />} />

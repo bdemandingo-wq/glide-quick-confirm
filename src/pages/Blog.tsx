@@ -21,6 +21,46 @@ interface BlogPost {
 const staticBlogPosts: BlogPost[] = [
   // Targeted local SEO posts — newest, highest priority
   {
+    slug: "house-cleaning-wellington",
+    title: "House Cleaning in Wellington, FL — Equestrian Estates, Polo Season & From $108",
+    excerpt: "The equestrian capital of the world has unique cleaning needs — polo season scheduling, horse property tracking, and luxury estates at Palm Beach Polo and Country Club.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-boynton-beach",
+    title: "House Cleaning in Boynton Beach, FL — Pricing, Services & What to Expect",
+    excerpt: "Active adult communities, waterfront homes, and fast-growing new developments — here's everything Boynton Beach homeowners need to know about professional cleaning.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-sunny-isles-beach",
+    title: "House Cleaning in Sunny Isles Beach, FL — Ultra-Luxury Towers & White-Glove Service",
+    excerpt: "Porsche Design Tower, Regalia, Jade Ocean — Sunny Isles Beach demands white-glove standards, exotic surface expertise, and complete discretion. Here's what residents need to know.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-hallandale-beach",
+    title: "House Cleaning in Hallandale Beach, FL — Condos, Snowbirds & From $108",
+    excerpt: "Golden Isles, oceanfront condos, and a large seasonal population — here's what Hallandale Beach homeowners and seasonal residents need to know about professional cleaning.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-davie",
+    title: "House Cleaning in Davie, FL — Ranch Homes, Equestrian Properties & From $108",
+    excerpt: "Davie's unique mix of ranch homes, equestrian properties, and suburban neighborhoods creates specific cleaning challenges. Here's what Davie homeowners need to know.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
     slug: "house-cleaning-boca-raton",
     title: "House Cleaning in Boca Raton, FL — Country Clubs, Estates & From $108",
     excerpt: "From Boca West Country Club to East Boca condos — snowbird seasonal scheduling, country club access, and luxury home expertise. Everything Boca Raton homeowners need to know.",
