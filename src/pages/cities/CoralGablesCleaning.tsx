@@ -78,6 +78,15 @@ const CoralGablesCleaning = () => {
           </div>
         </section>
 
+        <section className="py-10 bg-muted/30">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-sm text-muted-foreground mb-2">Not sure which service to book?</p>
+            <Link to="/blog/deep-cleaning-vs-standard-cleaning" className="text-primary font-semibold hover:underline">
+              Deep Clean vs Standard Clean — which one does your home actually need? →
+            </Link>
+          </div>
+        </section>
+
         <RelatedLinks currentPage="/coral-gables-cleaning" pageType="city" cityName="Coral Gables" />
         <Footer />
       </main>

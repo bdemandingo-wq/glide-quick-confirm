@@ -11,8 +11,8 @@ const BrowardCostGuide = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="2025 Cleaning Cost Guide Broward County | TIDYWISE"
-        pageDescription="Broward County cleaning cost guide 2025. Average prices for standard, deep, and move-out cleaning in Fort Lauderdale, Hollywood, Coral Springs. Get free quote!"
+        pageTitle="2026 Cleaning Cost Guide Broward County | TIDYWISE"
+        pageDescription="Broward County cleaning cost guide 2026. Average prices for standard, deep, and move-out cleaning in Fort Lauderdale, Hollywood, Coral Springs. Get free quote!"
         canonicalUrl="https://www.tidywisecleaning.com/blog/broward-cost-guide"
         pageType="blog"
         county="Broward County"
@@ -41,11 +41,11 @@ const BrowardCostGuide = () => {
               </div>
               
               <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-                2025 Cost Guide for Cleaning Services in Broward County
+                2026 Cost Guide for Cleaning Services in Broward County
               </h1>
               
               <p className="text-lg text-muted-foreground">
-                Planning your cleaning budget for 2025? Here's everything you need to know about 
+                Planning your cleaning budget for 2026? Here's everything you need to know about 
                 <Link to="/broward-county-cleaning" className="text-primary hover:underline mx-1">Broward County cleaning service</Link> 
                 costs, from Fort Lauderdale to Coral Springs.
               </p>
@@ -56,12 +56,12 @@ const BrowardCostGuide = () => {
                 Average Cleaning Costs in Fort Lauderdale
               </h2>
               <p className="text-muted-foreground mb-6">
-                In 2025, the average cost for professional <Link to="/broward-county-cleaning" className="text-primary hover:underline">cleaning services in Broward County</Link> ranges 
+                In 2026, the average cost for professional <Link to="/broward-county-cleaning" className="text-primary hover:underline">cleaning services in Broward County</Link> ranges 
                 from $120-$280 depending on your home size and service type. Here's a breakdown:
               </p>
 
               <div className="bg-muted p-6 rounded-xl mb-8">
-                <h3 className="font-display text-xl font-semibold text-foreground mb-4">Standard Cleaning Prices (2025)</h3>
+                <h3 className="font-display text-xl font-semibold text-foreground mb-4">Standard Cleaning Prices (2026)</h3>
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• 1-2 Bedroom: $120-$160</li>
                   <li>• 3 Bedroom: $160-$220</li>

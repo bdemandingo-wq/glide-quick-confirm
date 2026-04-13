@@ -137,6 +137,15 @@ const MiamiBeachCleaning = () => {
           </div>
         </section>
 
+        <section className="py-10 bg-muted/30">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-sm text-muted-foreground mb-2">Booking your first professional clean?</p>
+            <Link to="/blog/deep-cleaning-service-miami" className="text-primary font-semibold hover:underline">
+              Read our Miami deep cleaning guide — pricing, what's included &amp; why humidity matters →
+            </Link>
+          </div>
+        </section>
+
         <RelatedLinks currentPage="/miami-beach-cleaning" pageType="city" cityName="Miami Beach" />
         <Footer />
       </main>

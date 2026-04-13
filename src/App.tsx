@@ -97,6 +97,8 @@ const MerryMaidsAlternative = lazy(() => import("./pages/vs/MerryMaidsAlternativ
 const HandyAlternative = lazy(() => import("./pages/vs/HandyAlternative"));
 const TheMaidsAlternative = lazy(() => import("./pages/vs/TheMaidsAlternative"));
 const CleaningServiceAlternatives = lazy(() => import("./pages/vs/CleaningServiceAlternatives"));
+const TaskRabbitAlternative = lazy(() => import("./pages/vs/TaskRabbitAlternative"));
+const AmazonHomeServicesAlternative = lazy(() => import("./pages/vs/AmazonHomeServicesAlternative"));
 
 // Programmatic SEO pages
 const HouseCleaningCostGuide = lazy(() => import("./pages/HouseCleaningCostGuide"));
@@ -248,6 +250,8 @@ const AppRoutes = () => {
         <Route path="/handy-alternative" element={<HandyAlternative />} />
         <Route path="/the-maids-alternative" element={<TheMaidsAlternative />} />
         <Route path="/cleaning-service-alternatives" element={<CleaningServiceAlternatives />} />
+        <Route path="/taskrabbit-alternative" element={<TaskRabbitAlternative />} />
+        <Route path="/amazon-home-services-alternative" element={<AmazonHomeServicesAlternative />} />
 
         {/* Programmatic SEO pages */}
         <Route path="/house-cleaning-cost-south-florida" element={<HouseCleaningCostGuide />} />

@@ -45,3 +45,4 @@ Disallow: /*?*
 Disallow: /*.json$
 
 Sitemap: https://www.tidywisecleaning.com/sitemap.xml
+Sitemap: https://www.tidywisecleaning.com/sitemap-index.xml

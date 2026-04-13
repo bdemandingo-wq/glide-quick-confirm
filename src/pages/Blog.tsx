@@ -19,6 +19,79 @@ interface BlogPost {
 
 // Static blog posts (existing content)
 const staticBlogPosts: BlogPost[] = [
+  // Targeted local SEO posts — newest, highest priority
+  {
+    slug: "move-out-cleaning-west-palm-beach",
+    title: "Move-Out Cleaning in West Palm Beach, FL — Get Your Security Deposit Back",
+    excerpt: "Moving out of a West Palm Beach rental? Here's exactly what a professional move-out clean covers, what it costs, and how to protect your deposit.",
+    date: "April 2026",
+    readTime: "6 min read",
+    category: "Local"
+  },
+  {
+    slug: "deep-cleaning-service-boca-raton",
+    title: "Deep Cleaning Service in Boca Raton, FL — What's Included & What It Costs",
+    excerpt: "Everything Boca Raton homeowners need to know about deep cleaning — what's covered, how much it costs, and when to book one.",
+    date: "April 2026",
+    readTime: "6 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-hollywood-florida",
+    title: "House Cleaning in Hollywood, FL — Pricing, Services & What to Expect",
+    excerpt: "Everything Hollywood, FL homeowners need to know before booking — pricing by home size, what's included, and how to find a cleaner you can trust.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "move-in-cleaning-miami",
+    title: "Move-In Cleaning in Miami, FL — Start Fresh in Your New Home",
+    excerpt: "Moving into a Miami home or condo? Here's what a professional move-in clean covers, what it costs, and why South Florida humidity makes it essential.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "airbnb-cleaning-fort-lauderdale",
+    title: "Airbnb Cleaning in Fort Lauderdale — Turnover Cleaning for STR Hosts",
+    excerpt: "Running a short-term rental in Fort Lauderdale? Here's everything vacation rental hosts need to know about turnovers, pricing, and getting 5-star reviews.",
+    date: "April 2026",
+    readTime: "6 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-west-palm-beach",
+    title: "House Cleaning in West Palm Beach, FL — Pricing, Services & How to Book",
+    excerpt: "A complete guide to house cleaning prices in West Palm Beach, what's included in each service, and how to find a licensed cleaner you can trust.",
+    date: "April 2026",
+    readTime: "6 min read",
+    category: "Local"
+  },
+  {
+    slug: "move-out-cleaning-boca-raton",
+    title: "Move-Out Cleaning in Boca Raton, FL — Get Your Deposit Back",
+    excerpt: "Moving out of your Boca Raton home? A professional move-out clean is the most reliable way to protect your security deposit.",
+    date: "March 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "deep-cleaning-service-miami",
+    title: "Deep Cleaning Service in Miami, FL — Pricing, What's Included & How to Book",
+    excerpt: "Miami's humidity, mold risk, and high-rise living make deep cleaning essential. Here's what to expect and what it costs.",
+    date: "February 2026",
+    readTime: "6 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-fort-lauderdale",
+    title: "House Cleaning in Fort Lauderdale, FL — Everything You Need to Know",
+    excerpt: "A complete guide to professional house cleaning in Fort Lauderdale — pricing, what's included, neighborhoods served, and how to book.",
+    date: "January 2026",
+    readTime: "6 min read",
+    category: "Local"
+  },
   {
     slug: "move-in-out-cleaning-checklist",
     title: "The Ultimate Move In/Out Cleaning Checklist for South Florida",
@@ -61,8 +134,8 @@ const staticBlogPosts: BlogPost[] = [
   },
   {
     slug: "broward-cost-guide",
-    title: "2025 Cost Guide for Cleaning Services in Broward County",
-    excerpt: "Planning your cleaning budget for 2025? Here's everything you need to know about Broward County cleaning service costs.",
+    title: "2026 Cost Guide for Cleaning Services in Broward County",
+    excerpt: "Planning your cleaning budget? Here's everything you need to know about Broward County cleaning service costs in 2026.",
     date: "January 2025",
     readTime: "5 min read",
     category: "Pricing"

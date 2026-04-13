@@ -78,6 +78,15 @@ const PompanoBeachCleaning = () => {
           </div>
         </section>
 
+        <section className="py-10 bg-muted/30">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-sm text-muted-foreground mb-2">Want to know what's included before booking?</p>
+            <Link to="/blog/house-cleaning-fort-lauderdale" className="text-primary font-semibold hover:underline">
+              Read our Broward County cleaning guide — pricing, what's included &amp; how to book →
+            </Link>
+          </div>
+        </section>
+
         <RelatedLinks currentPage="/pompano-beach-cleaning" pageType="city" cityName="Pompano Beach" />
         <Footer />
       </main>

@@ -62,6 +62,24 @@ const alternatives = [
     slug: "/handy-alternative"
   },
   {
+    name: "TaskRabbit",
+    type: "Gig Marketplace",
+    pricing: "Hourly — $50–80/hr (unpredictable total)",
+    pros: ["Wide range of tasks", "Background checks", "Flexibility"],
+    cons: ["Hourly pricing adds up fast", "Generalist taskers — not cleaning specialists", "Must provide your own supplies", "No same team each visit"],
+    bestFor: "One-off odd jobs, not regular house cleaning",
+    slug: "/taskrabbit-alternative"
+  },
+  {
+    name: "Amazon Home Services",
+    type: "National Marketplace",
+    pricing: "Varies by local provider + Amazon fee",
+    pros: ["Familiar platform", "Happiness Guarantee", "Easy booking"],
+    cons: ["Third-party contractors — not Amazon employees", "Platform fee on top of provider rate", "Quality varies by local provider", "No South Florida specialization"],
+    bestFor: "Those already on Amazon ecosystem who want convenience",
+    slug: "/amazon-home-services-alternative"
+  },
+  {
     name: "TIDYWISE ✓ Recommended",
     type: "Local South Florida Company",
     pricing: "From $108 — published online",
@@ -77,7 +95,7 @@ const CleaningServiceAlternatives = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best House Cleaning Services in South Florida (2025) | TIDYWISE vs Alternatives"
+        pageTitle="Best House Cleaning Services in South Florida (2026) | TIDYWISE vs Alternatives"
         pageDescription="Comparing house cleaning services in South Florida? See how TIDYWISE compares to Molly Maid, Merry Maids, The Maids, and Handy — with honest pros, cons, and pricing for each."
         canonicalUrl="https://www.tidywisecleaning.com/cleaning-service-alternatives"
         pageType="service"
