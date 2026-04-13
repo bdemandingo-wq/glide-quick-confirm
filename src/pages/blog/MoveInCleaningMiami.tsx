@@ -49,7 +49,7 @@ const MoveInCleaningMiami = () => {
     <>
       <SEOSchema
         pageTitle="Move-In Cleaning Miami FL | TIDYWISE | From $208"
-        pageDescription="Professional move-in cleaning in Miami, FL. Start fresh in your new home. Licensed & insured. Serving Brickell, Coral Gables, Coconut Grove, Edgewater & all Miami neighborhoods. From $208."
+        pageDescription="Move-in cleaning in Miami, FL from $208. Start fresh in your new home. Brickell, Coral Gables, Coconut Grove & all Miami neighborhoods. Licensed & insured."
         canonicalUrl="https://www.tidywisecleaning.com/blog/move-in-cleaning-miami"
         pageType="blog"
         blogMeta={{ datePublished: "2026-04-13", dateModified: "2026-04-13", category: "Local Guides" }}

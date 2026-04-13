@@ -62,7 +62,7 @@ const DeepCleaningBocaRaton = () => {
     <>
       <SEOSchema
         pageTitle="Deep Cleaning Service Boca Raton | First Clean Specialists | TIDYWISE"
-        pageDescription="Deep cleaning in Boca Raton, FL from $208. Includes inside appliances, baseboards, grout scrubbing & more. Serving Boca West, Broken Sound, Mizner Park. Book now!"
+        pageDescription="Deep cleaning in Boca Raton, FL from $208. Inside appliances, baseboards, grout scrubbing & more. Boca West, Broken Sound, Mizner Park. Book now."
         canonicalUrl="https://www.tidywisecleaning.com/blog/deep-cleaning-service-boca-raton"
         pageType="article"
         additionalSchema={faqSchema}

@@ -94,7 +94,7 @@ const HouseCleaningCostGuide = () => {
     <>
       <SEOSchema
         pageTitle="How Much Does House Cleaning Cost in South Florida? (2025 Guide)"
-        pageDescription="Detailed house cleaning cost guide for South Florida. Standard cleaning from $108, deep cleaning from $208, move-out from $283. Serving Fort Lauderdale, Miami, Boca Raton & 40+ cities."
+        pageDescription="South Florida house cleaning cost guide. Standard from $108, deep from $208, move-out from $283. Fort Lauderdale, Miami, Boca Raton & 40+ cities."
         canonicalUrl="https://www.tidywisecleaning.com/house-cleaning-cost-south-florida"
         pageType="service"
         faqItems={faqItems}

@@ -47,7 +47,7 @@ const AirbnbCleaningFortLauderdale = () => {
     <>
       <SEOSchema
         pageTitle="Airbnb Cleaning Fort Lauderdale FL | Turnover Cleaning | TIDYWISE"
-        pageDescription="Professional Airbnb turnover cleaning in Fort Lauderdale, FL. Same-day available. Serving Las Olas, Victoria Park, Rio Vista, Lauderdale-by-the-Sea & all Fort Lauderdale short-term rentals. From $95."
+        pageDescription="Airbnb turnover cleaning in Fort Lauderdale, FL. Same-day available. Las Olas, Victoria Park, Rio Vista & all Fort Lauderdale short-term rentals. From $95."
         canonicalUrl="https://www.tidywisecleaning.com/blog/airbnb-cleaning-fort-lauderdale"
         pageType="blog"
         blogMeta={{ datePublished: "2026-04-13", dateModified: "2026-04-13", category: "Local Guides" }}

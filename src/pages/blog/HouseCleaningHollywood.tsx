@@ -47,7 +47,7 @@ const HouseCleaningHollywood = () => {
     <>
       <SEOSchema
         pageTitle="House Cleaning Hollywood FL | Licensed & Insured | TIDYWISE"
-        pageDescription="Professional house cleaning in Hollywood, FL. Licensed & insured. Serving Hollywood Beach, Emerald Hills, Dania Beach & all neighborhoods. From $118. Book online!"
+        pageDescription="House cleaning in Hollywood, FL from $118. Licensed & insured. Hollywood Beach, Emerald Hills, Dania Beach & all Hollywood neighborhoods. Book now."
         canonicalUrl="https://www.tidywisecleaning.com/blog/house-cleaning-hollywood-florida"
         pageType="article"
         additionalSchema={faqSchema}

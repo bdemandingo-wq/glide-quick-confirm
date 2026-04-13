@@ -53,7 +53,7 @@ const AmazonHomeServicesAlternative = () => {
     <>
       <SEOSchema
         pageTitle="Amazon Home Services Alternative for Cleaning | TIDYWISE South Florida"
-        pageDescription="Looking for an Amazon Home Services alternative for house cleaning in South Florida? TIDYWISE offers local teams, flat-rate pricing & direct accountability. Compare today."
+        pageDescription="Amazon Home Services alternative for cleaning in South Florida. Local teams, flat-rate pricing & direct accountability. Fort Lauderdale, Miami, Boca Raton."
         canonicalUrl="https://www.tidywisecleaning.com/amazon-home-services-alternative"
         pageType="service"
         additionalSchema={faqSchema}

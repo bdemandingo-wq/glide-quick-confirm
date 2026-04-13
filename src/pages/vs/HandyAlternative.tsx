@@ -42,7 +42,7 @@ const HandyAlternative = () => {
     <>
       <SEOSchema
         pageTitle="TIDYWISE vs Handy South Florida | More Reliable Local Alternative"
-        pageDescription="Comparing Handy vs TIDYWISE for house cleaning in South Florida? TIDYWISE offers a dedicated insured team, eco-friendly products, and a satisfaction guarantee across Fort Lauderdale, Miami, Boca Raton & 40+ cities."
+        pageDescription="Better than Handy for house cleaning in South Florida. Dedicated insured teams, eco-friendly products, flat-rate pricing & satisfaction guarantee. Book now."
         canonicalUrl="https://www.tidywisecleaning.com/handy-alternative"
         pageType="service"
         faqItems={faqItems}

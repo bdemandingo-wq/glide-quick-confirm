@@ -53,7 +53,7 @@ const TaskRabbitAlternative = () => {
     <>
       <SEOSchema
         pageTitle="TaskRabbit Alternative for House Cleaning | TIDYWISE South Florida"
-        pageDescription="Looking for a TaskRabbit alternative for house cleaning in South Florida? TIDYWISE offers flat-rate pricing, insured dedicated teams & a satisfaction guarantee. Compare now."
+        pageDescription="Better than TaskRabbit for house cleaning in South Florida. TIDYWISE: flat-rate pricing, insured dedicated teams & satisfaction guarantee. Compare and book now."
         canonicalUrl="https://www.tidywisecleaning.com/taskrabbit-alternative"
         pageType="service"
         additionalSchema={faqSchema}

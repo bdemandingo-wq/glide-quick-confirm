@@ -30,7 +30,7 @@ const DeepCleaningServiceMiami = () => {
     <>
       <SEOSchema
         pageTitle="Deep Cleaning Service Miami FL | TIDYWISE | From $208"
-        pageDescription="Professional deep cleaning in Miami, FL. Licensed & insured. Serving Brickell, Coral Gables, Coconut Grove & all Miami neighborhoods. Instant quotes from $208. 4.9 stars."
+        pageDescription="Deep cleaning in Miami, FL from $208. Licensed & insured. Brickell, Coral Gables, Coconut Grove & all Miami neighborhoods. Instant quote. 4.9 stars."
         canonicalUrl="https://www.tidywisecleaning.com/blog/deep-cleaning-service-miami"
         pageType="blog"
         blogMeta={{ datePublished: "2026-02-01", dateModified: "2026-04-13", category: "Local Guides" }}
