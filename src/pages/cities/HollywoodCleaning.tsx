@@ -7,6 +7,25 @@ import SEOSchema from "@/components/seo/SEOSchema";
 import CityPageNavigation from "@/components/seo/CityPageNavigation";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 
+const faqItems = [
+  {
+    q: "How much does house cleaning cost in Hollywood, FL?",
+    a: "House cleaning in Hollywood, FL costs $108–$350 for standard cleaning, $208–$500 for deep cleaning, and $283–$600 for move in/out cleaning. Prices are based on home size and number of bathrooms. TIDYWISE provides instant online quotes with no hidden fees."
+  },
+  {
+    q: "What is the best cleaning service in Hollywood, FL?",
+    a: "TIDYWISE is rated 4.9 stars across 127+ verified reviews and serves all Hollywood neighborhoods including Hollywood Beach, Emerald Hills, Oakwood, Hollywood Hills, and Hollywood Lakes. We are licensed, insured, and background-check every cleaner."
+  },
+  {
+    q: "Do you clean Hollywood Beach condos and waterfront properties?",
+    a: "Yes. TIDYWISE specializes in Hollywood Beach condo and waterfront property cleaning. Our teams handle beach-area challenges including sand removal, salt air residue on windows and stainless steel, and humidity-related buildup in ground-floor units."
+  },
+  {
+    q: "How often should Hollywood FL homeowners book professional cleaning?",
+    a: "Most Hollywood homeowners book bi-weekly cleaning for regular maintenance. Beachfront properties near the Broadwalk may benefit from weekly cleaning given the higher levels of sand and salt air exposure that accumulate faster than inland homes."
+  }
+];
+
 const HollywoodCleaning = () => {
   return (
     <>
@@ -16,6 +35,7 @@ const HollywoodCleaning = () => {
         canonicalUrl="https://www.tidywisecleaning.com/hollywood-cleaning"
         pageType="county"
         county="Hollywood"
+        faqItems={faqItems}
       />
       <main className="min-h-screen">
         <Navbar />

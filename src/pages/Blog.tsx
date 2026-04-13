@@ -21,6 +21,46 @@ interface BlogPost {
 const staticBlogPosts: BlogPost[] = [
   // Targeted local SEO posts — newest, highest priority
   {
+    slug: "house-cleaning-delray-beach",
+    title: "House Cleaning in Delray Beach, FL — Pricing, Services & How to Book",
+    excerpt: "Snowbirds, country club residents, and year-round homeowners: here's what Delray Beach homeowners need to know about professional cleaning — pricing, neighborhoods, and seasonal service.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-miami-beach",
+    title: "House Cleaning in Miami Beach, FL — Condos, STRs & Everything In Between",
+    excerpt: "Oceanfront condos, luxury penthouses, short-term rentals — Miami Beach is a unique cleaning market. Here's everything condo owners and STR hosts need to know.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-pompano-beach",
+    title: "House Cleaning in Pompano Beach, FL — Pricing, Services & What to Expect",
+    excerpt: "From beachfront condos to western Broward neighborhoods — here's what Pompano Beach homeowners need to know about professional cleaning pricing and coastal-specific challenges.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-pembroke-pines",
+    title: "House Cleaning in Pembroke Pines, FL — Pricing, Services & What to Expect",
+    excerpt: "Pembroke Pines is Broward County's largest city. Large pool homes, gated planned communities, and HOA access requirements — here's everything homeowners need to know.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
+    slug: "house-cleaning-coral-springs",
+    title: "House Cleaning in Coral Springs, FL — Pricing, Services & How to Book",
+    excerpt: "Everything Coral Springs homeowners should know about professional cleaning — costs, what's included, neighborhoods served, and how to book a trusted local cleaner.",
+    date: "April 2026",
+    readTime: "5 min read",
+    category: "Local"
+  },
+  {
     slug: "move-out-cleaning-west-palm-beach",
     title: "Move-Out Cleaning in West Palm Beach, FL — Get Your Security Deposit Back",
     excerpt: "Moving out of a West Palm Beach rental? Here's exactly what a professional move-out clean covers, what it costs, and how to protect your deposit.",

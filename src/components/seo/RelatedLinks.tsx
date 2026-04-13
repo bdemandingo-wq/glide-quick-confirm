@@ -41,12 +41,15 @@ const comparisons = [
 ];
 
 const blogPosts = [
+  { name: "House Cleaning Fort Lauderdale", link: "/blog/house-cleaning-fort-lauderdale" },
+  { name: "House Cleaning Miami Beach", link: "/blog/house-cleaning-miami-beach" },
+  { name: "House Cleaning Coral Springs", link: "/blog/house-cleaning-coral-springs" },
+  { name: "House Cleaning Pembroke Pines", link: "/blog/house-cleaning-pembroke-pines" },
+  { name: "House Cleaning Pompano Beach", link: "/blog/house-cleaning-pompano-beach" },
+  { name: "House Cleaning Delray Beach", link: "/blog/house-cleaning-delray-beach" },
   { name: "Deep vs Standard Cleaning", link: "/blog/deep-cleaning-vs-standard-cleaning" },
   { name: "Move In/Out Checklist", link: "/blog/move-in-out-cleaning-checklist" },
-  { name: "Pet-Friendly Cleaning Tips", link: "/blog/pet-friendly-cleaning-tips" },
-  { name: "How to Prepare for Cleaning", link: "/blog/how-to-prepare-for-cleaning-service" },
-  { name: "Eco-Friendly Products", link: "/blog/eco-friendly-cleaning-products" },
-  { name: "Bathroom Deep Cleaning Guide", link: "/blog/bathroom-deep-cleaning-guide" },
+  { name: "Airbnb Turnover Tips", link: "/blog/airbnb-turnover-cleaning-tips" },
 ];
 
 const RelatedLinks = ({ currentPage, pageType, county, cityName }: RelatedLinksProps) => {

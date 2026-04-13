@@ -7,6 +7,25 @@ import SEOSchema from "@/components/seo/SEOSchema";
 import CityPageNavigation from "@/components/seo/CityPageNavigation";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 
+const faqItems = [
+  {
+    q: "How much does house cleaning cost in Miami?",
+    a: "House cleaning in Miami costs $108–$400 for standard cleaning, $208–$550 for deep cleaning, and $283–$650 for move in/out cleaning. Condo and high-rise cleaning may vary based on square footage and building access requirements. TIDYWISE provides instant online quotes."
+  },
+  {
+    q: "What is the best cleaning service in Miami, FL?",
+    a: "TIDYWISE is rated 4.9 stars across 127+ verified reviews and serves all Miami neighborhoods including Brickell, Wynwood, Coconut Grove, Little Havana, and the Design District. We are licensed, insured, and background-check every cleaner."
+  },
+  {
+    q: "Do you clean Miami condos and high-rise apartments?",
+    a: "Yes. TIDYWISE specializes in Miami condo and high-rise cleaning. Our teams are familiar with building access requirements, HOA rules, and the unique challenges of humid Miami properties. We service all Miami-Dade buildings."
+  },
+  {
+    q: "How often should Miami homeowners book professional cleaning?",
+    a: "Miami's humidity and heat mean homes accumulate dust and mold risk faster than drier climates. Most Miami homeowners book bi-weekly cleaning for regular maintenance. Monthly deep cleaning is popular for condos with tile and grout that need more attention."
+  }
+];
+
 const MiamiCleaning = () => {
   return (
     <>
@@ -16,6 +35,7 @@ const MiamiCleaning = () => {
         canonicalUrl="https://www.tidywisecleaning.com/miami-cleaning"
         pageType="county"
         county="Miami"
+        faqItems={faqItems}
       />
       <main className="min-h-screen">
         <Navbar />

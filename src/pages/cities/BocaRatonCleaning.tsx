@@ -7,6 +7,25 @@ import SEOSchema from "@/components/seo/SEOSchema";
 import CityPageNavigation from "@/components/seo/CityPageNavigation";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 
+const faqItems = [
+  {
+    q: "How much does house cleaning cost in Boca Raton?",
+    a: "House cleaning in Boca Raton costs $108–$350 for standard cleaning, $208–$500 for deep cleaning, and $283–$600 for move in/out cleaning. Country club and luxury homes may be priced based on square footage. TIDYWISE provides instant online quotes."
+  },
+  {
+    q: "What is the best cleaning service in Boca Raton, FL?",
+    a: "TIDYWISE is rated 4.9 stars across 127+ verified reviews and serves all Boca Raton communities including Boca West, Broken Sound, Woodfield Country Club, and Royal Palm Yacht Club. We are licensed, insured, and background-check every cleaner."
+  },
+  {
+    q: "Do you service Boca Raton country clubs and gated communities?",
+    a: "Yes. TIDYWISE is experienced with country club and gated community access in Boca Raton. Our teams handle visitor gate protocols, parking coordination, and HOA requirements so appointments run smoothly at Boca West, Broken Sound, and similar communities."
+  },
+  {
+    q: "Do you offer seasonal cleaning in Boca Raton for snowbirds?",
+    a: "Yes. TIDYWISE accommodates Boca Raton's large seasonal population with flexible scheduling and no long-term contracts. We offer deep cleaning for snowbird arrivals in October/November and a thorough closing clean when you leave for the summer."
+  }
+];
+
 const BocaRatonCleaning = () => {
   return (
     <>
@@ -16,6 +35,7 @@ const BocaRatonCleaning = () => {
         canonicalUrl="https://www.tidywisecleaning.com/boca-raton-cleaning"
         pageType="county"
         county="Boca Raton"
+        faqItems={faqItems}
       />
       <main className="min-h-screen">
         <Navbar />

@@ -7,6 +7,25 @@ import SEOSchema from "@/components/seo/SEOSchema";
 import CityPageNavigation from "@/components/seo/CityPageNavigation";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 
+const faqItems = [
+  {
+    q: "How much does house cleaning cost in Fort Lauderdale?",
+    a: "House cleaning in Fort Lauderdale costs $108–$350 for standard cleaning, $208–$500 for deep cleaning, and $283–$600 for move in/out cleaning. Prices depend on home size and number of bathrooms. TIDYWISE provides instant online quotes with no hidden fees."
+  },
+  {
+    q: "What is the best cleaning service in Fort Lauderdale, FL?",
+    a: "TIDYWISE is rated 4.9 stars across 127+ verified reviews and serves all Fort Lauderdale neighborhoods including Las Olas, Victoria Park, Rio Vista, and Coral Ridge. We are licensed, insured, and background-check every cleaner."
+  },
+  {
+    q: "Do you clean Fort Lauderdale condos and waterfront homes?",
+    a: "Yes. TIDYWISE specializes in Fort Lauderdale condo and waterfront home cleaning. Our teams are familiar with Las Olas Isles canal home access, building elevator protocols, and the unique challenges of coastal living."
+  },
+  {
+    q: "How often should Fort Lauderdale homeowners book professional cleaning?",
+    a: "Most Fort Lauderdale homeowners book bi-weekly standard cleaning to manage South Florida's year-round humidity and dust. Coastal homes near the beach may benefit from weekly cleaning to combat salt air residue and buildup."
+  }
+];
+
 const FortLauderdaleCleaning = () => {
   return (
     <>
@@ -16,6 +35,7 @@ const FortLauderdaleCleaning = () => {
         canonicalUrl="https://www.tidywisecleaning.com/fort-lauderdale-cleaning"
         pageType="county"
         county="Fort Lauderdale"
+        faqItems={faqItems}
       />
       <main className="min-h-screen">
         <Navbar />

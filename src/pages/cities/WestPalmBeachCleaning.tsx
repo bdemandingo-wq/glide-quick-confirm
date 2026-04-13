@@ -7,6 +7,25 @@ import SEOSchema from "@/components/seo/SEOSchema";
 import CityPageNavigation from "@/components/seo/CityPageNavigation";
 import RelatedLinks from "@/components/seo/RelatedLinks";
 
+const faqItems = [
+  {
+    q: "How much does house cleaning cost in West Palm Beach?",
+    a: "House cleaning in West Palm Beach costs $108–$350 for standard cleaning, $208–$500 for deep cleaning, and $283–$600 for move in/out cleaning. Prices are based on home size and number of bathrooms. TIDYWISE provides instant online quotes with no hidden fees."
+  },
+  {
+    q: "What is the best cleaning service in West Palm Beach, FL?",
+    a: "TIDYWISE is rated 4.9 stars across 127+ verified reviews and serves all West Palm Beach neighborhoods including Clematis, Northwood, El Cid, Flamingo Park, and CityPlace. We are licensed, insured, and background-check every cleaner."
+  },
+  {
+    q: "Do you clean West Palm Beach condos and historic homes?",
+    a: "Yes. TIDYWISE cleans all West Palm Beach property types including downtown condos, historic properties in El Cid and Old Northwood, and waterfront homes along the Intracoastal. Our teams understand how to clean vintage details and delicate surfaces without causing damage."
+  },
+  {
+    q: "Do you offer move-out cleaning in West Palm Beach?",
+    a: "Yes. TIDYWISE provides move-out cleaning throughout West Palm Beach. Our move-out service covers everything from inside the oven and refrigerator to windows and baseboards — everything needed to pass a landlord inspection and protect your security deposit."
+  }
+];
+
 const WestPalmBeachCleaning = () => {
   return (
     <>
@@ -16,6 +35,7 @@ const WestPalmBeachCleaning = () => {
         canonicalUrl="https://www.tidywisecleaning.com/west-palm-beach-cleaning"
         pageType="county"
         county="West Palm Beach"
+        faqItems={faqItems}
       />
       <main className="min-h-screen">
         <Navbar />
