@@ -4,7 +4,7 @@ interface SEOSchemaProps {
   pageTitle: string;
   pageDescription: string;
   canonicalUrl: string;
-  pageType?: 'home' | 'county' | 'blog' | 'service' | 'city';
+  pageType?: 'home' | 'county' | 'blog' | 'service' | 'city' | 'article';
   county?: string;
   cityName?: string;
   blogMeta?: {
@@ -15,6 +15,7 @@ interface SEOSchemaProps {
   };
   faqItems?: Array<{ q: string; a: string }>;
   breadcrumbs?: Array<{ name: string; url: string }>;
+  additionalSchema?: object;
 }
 
 const WEBSITE = "https://www.tidywisecleaning.com";
@@ -137,16 +138,17 @@ const videoSchema = {
   "publisher": { "@id": `${WEBSITE}/#business` }
 };
 
-const SEOSchema = ({ 
-  pageTitle, 
-  pageDescription, 
+const SEOSchema = ({
+  pageTitle,
+  pageDescription,
   canonicalUrl,
   pageType = 'home',
   county,
   cityName,
   blogMeta,
   faqItems,
-  breadcrumbs
+  breadcrumbs,
+  additionalSchema
 }: SEOSchemaProps) => {
   const isHome = pageType === 'home';
 
@@ -284,7 +286,7 @@ const SEOSchema = ({
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:type" content={pageType === 'blog' ? 'article' : 'website'} />
+      <meta property="og:type" content={(pageType === 'blog' || pageType === 'article') ? 'article' : 'website'} />
       <meta property="og:image" content={`${WEBSITE}/og-image.webp`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -362,6 +364,11 @@ const SEOSchema = ({
       {cityLocalBusinessSchema && (
         <script type="application/ld+json">
           {JSON.stringify(cityLocalBusinessSchema)}
+        </script>
+      )}
+      {additionalSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(additionalSchema)}
         </script>
       )}
     </Helmet>
