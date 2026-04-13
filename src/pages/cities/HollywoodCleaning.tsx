@@ -13,7 +13,7 @@ const HollywoodCleaning = () => {
       <SEOSchema
         pageTitle="Hollywood House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Trusted house cleaning Hollywood FL. Serving Hollywood Beach, Emerald Hills, Oakwood. Licensed & insured. Same-day quotes. Call (561) 571-8725!"
-        canonicalUrl="https://tidywisecleaning.com/hollywood-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/hollywood-cleaning"
         pageType="county"
         county="Hollywood"
       />

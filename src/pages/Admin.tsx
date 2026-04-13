@@ -243,7 +243,7 @@ const Admin = () => {
       <SEOHead
         title="Admin Dashboard | TIDYWISE"
         description="TIDYWISE admin dashboard for managing bookings, applications, and business operations."
-        canonical="https://tidywisecleaning.com/admin"
+        canonical="https://www.tidywisecleaning.com/admin"
         noIndex={true}
       />
     <div className="min-h-screen bg-muted">

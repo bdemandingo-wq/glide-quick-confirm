@@ -12,7 +12,7 @@ const ParklandCleaning = () => {
       <SEOSchema
         pageTitle="Parkland House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Parkland FL premium estate cleaning. Heron Bay, Parkland Golf & The Estates. Trusted by Parkland's finest homes. Get your custom quote!"
-        canonicalUrl="https://tidywisecleaning.com/parkland-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/parkland-cleaning"
         pageType="county"
         county="Parkland"
       />

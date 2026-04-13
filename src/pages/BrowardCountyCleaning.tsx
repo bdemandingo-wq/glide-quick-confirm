@@ -26,7 +26,7 @@ const BrowardCountyCleaning = () => {
       <SEOSchema
         pageTitle="Broward County Cleaning Services | TIDYWISE"
         pageDescription="Need Broward County cleaning services? Licensed & insured. Same-day quotes. Serving Fort Lauderdale, Hollywood, Coral Springs. Call now for 10% off!"
-        canonicalUrl="https://tidywisecleaning.com/broward-county-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/broward-county-cleaning"
         pageType="county"
         county="Broward County"
       />

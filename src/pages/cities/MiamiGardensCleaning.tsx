@@ -12,7 +12,7 @@ const MiamiGardensCleaning = () => {
       <SEOSchema
         pageTitle="Miami Gardens House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Miami Gardens FL reliable home cleaning. Hard Rock Stadium area, Andover & Scott Lake. Recurring maintenance plans available. Free quote online!"
-        canonicalUrl="https://tidywisecleaning.com/miami-gardens-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/miami-gardens-cleaning"
         pageType="county"
         county="Miami Gardens"
       />

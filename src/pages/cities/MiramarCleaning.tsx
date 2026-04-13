@@ -12,7 +12,7 @@ const MiramarCleaning = () => {
       <SEOSchema
         pageTitle="Miramar House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Miramar FL affordable house cleaning you can trust. Sunset Lakes, Silver Shores & Riviera Isles. Flexible scheduling. Satisfaction guaranteed!"
-        canonicalUrl="https://tidywisecleaning.com/miramar-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/miramar-cleaning"
         pageType="county"
         county="Miramar"
       />

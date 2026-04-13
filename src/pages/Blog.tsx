@@ -212,7 +212,7 @@ const Blog = () => {
       <SEOSchema
         pageTitle="Cleaning Tips & Guides Blog | TIDYWISE South Florida"
         pageDescription="Expert cleaning tips, guides, and advice for South Florida homeowners. Learn about deep cleaning, pet-friendly cleaning, hurricane prep, and more from TIDYWISE."
-        canonicalUrl="https://tidywisecleaning.com/blog"
+        canonicalUrl="https://www.tidywisecleaning.com/blog"
         pageType="blog"
         county="South Florida"
       />

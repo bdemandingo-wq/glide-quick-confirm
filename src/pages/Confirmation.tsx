@@ -32,7 +32,7 @@ const Confirmation = () => {
       <SEOHead
         title="Booking Confirmed | TIDYWISE"
         description="Your cleaning service booking has been confirmed. TIDYWISE will contact you within 15 minutes."
-        canonical="https://tidywisecleaning.com/confirmation"
+        canonical="https://www.tidywisecleaning.com/confirmation"
         noIndex={true}
       />
       {!booking ? (

@@ -14,7 +14,7 @@ const ContractorRateSheet = () => {
       <SEOHead
         title="Contractor Rate Sheet | TIDYWISE"
         description="TIDYWISE contractor rate sheet with service pricing for cleaning professionals. Print or save as PDF."
-        canonical="https://tidywisecleaning.com/contractor-rate-sheet"
+        canonical="https://www.tidywisecleaning.com/contractor-rate-sheet"
         noIndex={true}
       />
     <div className="min-h-screen bg-background">

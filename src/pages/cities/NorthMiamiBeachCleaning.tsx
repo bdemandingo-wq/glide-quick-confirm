@@ -12,7 +12,7 @@ const NorthMiamiBeachCleaning = () => {
       <SEOSchema
         pageTitle="North Miami Beach Cleaning | Insured | TIDYWISE"
         pageDescription="North Miami Beach FL home & apartment cleaning. Eastern Shores, Skylake & Ojus specialists. Flexible scheduling. Get 10% off your first clean!"
-        canonicalUrl="https://tidywisecleaning.com/north-miami-beach-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/north-miami-beach-cleaning"
         pageType="county"
         county="North Miami Beach"
       />

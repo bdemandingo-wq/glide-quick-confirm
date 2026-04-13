@@ -11,7 +11,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // ======== CONFIGURATION ========
-const BASE_URL = "https://tidywisecleaning.com";
+const BASE_URL = "https://www.tidywisecleaning.com";
 const ROUTER_FILE_PATH = resolve(__dirname, "../App.tsx");
 const OUTPUT_PATH = resolve(__dirname, "../../public/sitemap.xml");
 

@@ -29,12 +29,12 @@ const CarpetCleaning = () => {
       <SEOSchema
         pageTitle="Carpet Cleaning Services Near Me | South Florida | TIDYWISE"
         pageDescription="Professional carpet cleaning in Broward, Miami-Dade & Palm Beach County. Deep extraction, stain removal & eco-friendly options. Get a custom quote today!"
-        canonicalUrl="https://tidywisecleaning.com/carpet-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/carpet-cleaning"
         pageType="service"
         county="South Florida"
         breadcrumbs={[
-          { name: "Home", url: "https://tidywisecleaning.com" },
-          { name: "Carpet Cleaning", url: "https://tidywisecleaning.com/carpet-cleaning" }
+          { name: "Home", url: "https://www.tidywisecleaning.com" },
+          { name: "Carpet Cleaning", url: "https://www.tidywisecleaning.com/carpet-cleaning" }
         ]}
       />
       <main className="min-h-screen">

@@ -159,15 +159,15 @@ const FAQ = () => {
       <SEOHead
         title="Cleaning Service FAQ South Florida | TIDYWISE"
         description="Find answers about TIDYWISE cleaning services, pricing, booking & cancellations. Serving 40+ South Florida cities. Call (561) 571-8725."
-        canonical="https://tidywisecleaning.com/faq"
+        canonical="https://www.tidywisecleaning.com/faq"
         schemaJson={[
           faqSchema,
           {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tidywisecleaning.com" },
-              { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://tidywisecleaning.com/faq" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.tidywisecleaning.com" },
+              { "@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://www.tidywisecleaning.com/faq" }
             ]
           }
         ]}

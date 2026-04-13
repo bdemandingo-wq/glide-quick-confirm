@@ -13,7 +13,7 @@ const CoralSpringsCleaning = () => {
       <SEOSchema
         pageTitle="Coral Springs House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Professional cleaning Coral Springs FL. House cleaning for Heron Bay, Wyndham, Eagle Trace. Licensed & insured. Same-day quotes. Call (561) 571-8725!"
-        canonicalUrl="https://tidywisecleaning.com/coral-springs-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/coral-springs-cleaning"
         pageType="county"
         county="Coral Springs"
       />

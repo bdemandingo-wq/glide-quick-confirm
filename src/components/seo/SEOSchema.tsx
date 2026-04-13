@@ -17,7 +17,7 @@ interface SEOSchemaProps {
   breadcrumbs?: Array<{ name: string; url: string }>;
 }
 
-const WEBSITE = "https://tidywisecleaning.com";
+const WEBSITE = "https://www.tidywisecleaning.com";
 const BUSINESS_NAME = "TIDYWISE Cleaning Services";
 const PHONE = "+1-561-571-8725";
 
@@ -68,10 +68,6 @@ const cleaningServiceSchema = {
     { "@type": "AdministrativeArea", "name": "Miami-Dade County", "sameAs": "https://en.wikipedia.org/wiki/Miami-Dade_County,_Florida" },
     { "@type": "AdministrativeArea", "name": "Palm Beach County", "sameAs": "https://en.wikipedia.org/wiki/Palm_Beach_County,_Florida" }
   ],
-  "sameAs": [
-    "https://www.facebook.com/tidywisecleaning",
-    "https://www.instagram.com/tidywisecleaning"
-  ],
   "knowsAbout": ["House Cleaning", "Deep Cleaning", "Move-In Cleaning", "Move-Out Cleaning", "Carpet Cleaning", "Upholstery Cleaning", "Eco-Friendly Cleaning", "Commercial Cleaning"],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -89,20 +85,29 @@ const cleaningServiceSchema = {
       "@type": "Review",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "author": { "@type": "Person", "name": "Ashleigh Craig" },
+      "datePublished": "2025-06-10",
       "reviewBody": "I used Tidywise to do a deep clean of my home, and I couldn't be happier with the results! The team arrived on time, fully equipped, and ready to work. They paid attention to every detail—baseboards, windows, inside appliances—nothing was missed."
     },
     {
       "@type": "Review",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "author": { "@type": "Person", "name": "Sallie Sutherland" },
+      "datePublished": "2025-08-22",
       "reviewBody": "Tidy Wise in less than 12 hours got two women to my home over a holiday weekend. They were the most efficient, fast, capable young women I've ever met. It really saved my day."
     },
     {
       "@type": "Review",
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
       "author": { "@type": "Person", "name": "Charlie Dubb" },
+      "datePublished": "2025-11-04",
       "reviewBody": "The ladies cleaned my 30 year, unoccupied house FLAWLESSLY. Sadly, the Florida 'critters' had completely taken the place over, but you'd never know it now! THANK YOU!"
     }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/tidywisecleaning",
+    "https://www.instagram.com/tidywisecleaning",
+    "https://g.page/tidywise-cleaning",
+    "https://www.yelp.com/biz/tidywise-cleaning-deerfield-beach"
   ]
 };
 
@@ -210,7 +215,62 @@ const SEOSchema = ({
     "url": canonicalUrl,
     "provider": { "@id": `${WEBSITE}/#business` },
     "areaServed": { "@type": "AdministrativeArea", "name": "South Florida" },
-    "termsOfService": `${WEBSITE}/faq`
+    "termsOfService": `${WEBSITE}/faq`,
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "lowPrice": "108",
+      "highPrice": "600",
+      "offerCount": "7"
+    }
+  } : null;
+
+  // City-specific LocalBusiness schema — use cityName or county prop (city pages pass city name via county)
+  const resolvedCity = cityName || (pageType === 'city' || pageType === 'county' ? county : null);
+  const cityLocalBusinessSchema = resolvedCity ? {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": `${canonicalUrl}/#localbusiness`,
+    "name": `${BUSINESS_NAME} — ${resolvedCity}`,
+    "description": pageDescription,
+    "url": canonicalUrl,
+    "telephone": PHONE,
+    "email": "support@tidywisecleaning.com",
+    "priceRange": "$$",
+    "image": `${WEBSITE}/og-image.webp`,
+    "logo": `${WEBSITE}/logo.webp`,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "65 SW 12th Ave",
+      "addressLocality": "Deerfield Beach",
+      "addressRegion": "FL",
+      "postalCode": "33442",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": resolvedCity,
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Florida"
+      }
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:00", "closes": "15:00" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "127", "bestRating": "5" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": `Cleaning Services in ${resolvedCity}`,
+      "itemListElement": [
+        { "@type": "Offer", "name": `Standard Cleaning in ${resolvedCity}`, "price": "150", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": `Deep Cleaning in ${resolvedCity}`, "price": "250", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": `Move In/Out Cleaning in ${resolvedCity}`, "price": "300", "priceCurrency": "USD" }
+      ]
+    },
+    "sameAs": [`${WEBSITE}/#business`]
   } : null;
 
   return (
@@ -297,6 +357,11 @@ const SEOSchema = ({
       {serviceSchema && (
         <script type="application/ld+json">
           {JSON.stringify(serviceSchema)}
+        </script>
+      )}
+      {cityLocalBusinessSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(cityLocalBusinessSchema)}
         </script>
       )}
     </Helmet>

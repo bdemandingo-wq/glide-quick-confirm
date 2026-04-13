@@ -13,7 +13,7 @@ const BocaRatonCleaning = () => {
       <SEOSchema
         pageTitle="Boca Raton House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Top-rated cleaning Boca Raton. Professional house & condo cleaning. Serving Mizner Park, Royal Palm, Boca West. Licensed & insured. Call (561) 571-8725!"
-        canonicalUrl="https://tidywisecleaning.com/boca-raton-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/boca-raton-cleaning"
         pageType="county"
         county="Boca Raton"
       />

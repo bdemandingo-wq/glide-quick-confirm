@@ -42,12 +42,12 @@ const MoveInOutCleaning = () => {
       <SEOSchema
         pageTitle="Move In Move Out Cleaning South Florida | TIDYWISE"
         pageDescription="Move-out cleaning for full deposit back. Move-in cleaning for a fresh start. Fort Lauderdale, Miami & 40+ South Florida cities."
-        canonicalUrl="https://tidywisecleaning.com/move-in-out-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/move-in-out-cleaning"
         pageType="service"
         county="South Florida"
         breadcrumbs={[
-          { name: "Home", url: "https://tidywisecleaning.com" },
-          { name: "Move In/Out Cleaning", url: "https://tidywisecleaning.com/move-in-out-cleaning" }
+          { name: "Home", url: "https://www.tidywisecleaning.com" },
+          { name: "Move In/Out Cleaning", url: "https://www.tidywisecleaning.com/move-in-out-cleaning" }
         ]}
       />
       <main className="min-h-screen">

@@ -12,7 +12,7 @@ const NorthMiamiCleaning = () => {
       <SEOSchema
         pageTitle="North Miami House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="North Miami FL dependable house cleaning. Sans Souci, Keystone Point & Biscayne Gardens. Pet-friendly & eco-conscious. Book your estimate online!"
-        canonicalUrl="https://tidywisecleaning.com/north-miami-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/north-miami-cleaning"
         pageType="county"
         county="North Miami"
       />

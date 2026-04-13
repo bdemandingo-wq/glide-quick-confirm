@@ -85,7 +85,7 @@ const ServiceAreas = () => {
       "@type": "ListItem",
       "position": i + 1,
       "name": `${city.name} Cleaning Services`,
-      "url": `https://tidywisecleaning.com${city.link}`
+      "url": `https://www.tidywisecleaning.com${city.link}`
     }))
   };
 
@@ -94,11 +94,11 @@ const ServiceAreas = () => {
       <SEOSchema
         pageTitle="House Cleaning Near Me South Florida | 40+ Cities | TIDYWISE"
         pageDescription="House cleaning near me? TIDYWISE serves 40+ cities across Broward, Palm Beach & Miami-Dade counties. Find your city for local pricing."
-        canonicalUrl="https://tidywisecleaning.com/service-areas"
+        canonicalUrl="https://www.tidywisecleaning.com/service-areas"
         pageType="service"
         breadcrumbs={[
-          { name: "Home", url: "https://tidywisecleaning.com" },
-          { name: "Service Areas", url: "https://tidywisecleaning.com/service-areas" }
+          { name: "Home", url: "https://www.tidywisecleaning.com" },
+          { name: "Service Areas", url: "https://www.tidywisecleaning.com/service-areas" }
         ]}
       />
       <main className="min-h-screen">

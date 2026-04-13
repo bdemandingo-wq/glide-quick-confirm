@@ -26,7 +26,7 @@ const PalmBeachCountyCleaning = () => {
       <SEOSchema
         pageTitle="Palm Beach County Cleaning | TIDYWISE"
         pageDescription="Top-rated cleaning West Palm Beach & Boca Raton. Licensed & insured. Eco-friendly products. Same-day quotes. Call (561) 571-8725 for 10% off!"
-        canonicalUrl="https://tidywisecleaning.com/palm-beach-county-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/palm-beach-county-cleaning"
         pageType="county"
         county="Palm Beach County"
       />

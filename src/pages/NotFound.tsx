@@ -16,7 +16,7 @@ const NotFound = () => {
       <SEOHead
         title="Page Not Found | TIDYWISE Cleaning Services"
         description="The page you're looking for doesn't exist. TIDYWISE offers professional house cleaning in Fort Lauderdale, Boca Raton & West Palm Beach."
-        canonical="https://tidywisecleaning.com/404"
+        canonical="https://www.tidywisecleaning.com/404"
         noIndex={true}
       />
       

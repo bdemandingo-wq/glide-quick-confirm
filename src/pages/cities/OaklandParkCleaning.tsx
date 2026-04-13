@@ -12,7 +12,7 @@ const OaklandParkCleaning = () => {
       <SEOSchema
         pageTitle="Oakland Park House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Oakland Park FL trusted residential cleaning. Coral Heights, Lake Ridge & Royal Palm Isles. Move-in, move-out & deep cleaning available. Book now!"
-        canonicalUrl="https://tidywisecleaning.com/oakland-park-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/oakland-park-cleaning"
         pageType="county"
         county="Oakland Park"
       />

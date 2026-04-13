@@ -30,7 +30,7 @@ const ReferralProgram = () => {
       <SEOSchema
         pageTitle="Referral Program | Earn $25 Credit | TIDYWISE Cleaning"
         pageDescription="Refer a friend to TIDYWISE cleaning services and earn $25 credit. Your friend gets $25 off their first cleaning too! South Florida referral program."
-        canonicalUrl="https://tidywisecleaning.com/referral-program"
+        canonicalUrl="https://www.tidywisecleaning.com/referral-program"
         pageType="home"
         county="South Florida"
       />

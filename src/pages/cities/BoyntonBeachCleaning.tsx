@@ -12,7 +12,7 @@ const BoyntonBeachCleaning = () => {
       <SEOSchema
         pageTitle="Boynton Beach House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Boynton Beach FL residential cleaning experts. Leisureville, Aberdeen & Canyon Lakes. Standard, deep & move-out cleaning. Free instant quote online!"
-        canonicalUrl="https://tidywisecleaning.com/boynton-beach-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/boynton-beach-cleaning"
         pageType="county"
         county="Boynton Beach"
       />

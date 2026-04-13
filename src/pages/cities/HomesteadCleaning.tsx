@@ -12,7 +12,7 @@ const HomesteadCleaning = () => {
       <SEOSchema
         pageTitle="Homestead House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Homestead FL affordable residential cleaning. Redland, Florida City & Leisure City coverage. Honest pricing, no hidden fees. Call (561) 571-8725!"
-        canonicalUrl="https://tidywisecleaning.com/homestead-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/homestead-cleaning"
         pageType="county"
         county="Homestead"
       />

@@ -12,7 +12,7 @@ const PompanoBeachCleaning = () => {
       <SEOSchema
         pageTitle="Pompano Beach House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Pompano Beach FL coastal home cleaning. Lighthouse Point, Palm Aire & Cypress Creek. Salt-air safe cleaning methods. Free estimates available!"
-        canonicalUrl="https://tidywisecleaning.com/pompano-beach-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/pompano-beach-cleaning"
         pageType="county"
         county="Pompano Beach"
       />

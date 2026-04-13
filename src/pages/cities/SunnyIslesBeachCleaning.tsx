@@ -12,7 +12,7 @@ const SunnyIslesBeachCleaning = () => {
       <SEOSchema
         pageTitle="Sunny Isles Beach Cleaning | Insured | TIDYWISE"
         pageDescription="Sunny Isles Beach FL high-rise condo cleaning. Oceania, Acqualina & Golden Beach towers. Building-approved, insured teams. Call (561) 571-8725!"
-        canonicalUrl="https://tidywisecleaning.com/sunny-isles-beach-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/sunny-isles-beach-cleaning"
         pageType="county"
         county="Sunny Isles Beach"
       />

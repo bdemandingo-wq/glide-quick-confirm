@@ -13,7 +13,7 @@ const MiamiBeachCleaning = () => {
       <SEOSchema
         pageTitle="Miami Beach House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Affordable cleaning Miami Beach. Condo & house cleaning in South Beach, Mid-Beach, North Beach. Licensed & insured. Call (561) 571-8725 for free quote!"
-        canonicalUrl="https://tidywisecleaning.com/miami-beach-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/miami-beach-cleaning"
         pageType="county"
         county="Miami Beach"
       />

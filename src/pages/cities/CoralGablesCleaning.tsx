@@ -12,7 +12,7 @@ const CoralGablesCleaning = () => {
       <SEOSchema
         pageTitle="Coral Gables House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Coral Gables FL upscale residential cleaning. Miracle Mile, Cocoplum & Riviera estates. Discreet, professional & detail-oriented. Free consultation!"
-        canonicalUrl="https://tidywisecleaning.com/coral-gables-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/coral-gables-cleaning"
         pageType="county"
         county="Coral Gables"
       />

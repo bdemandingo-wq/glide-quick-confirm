@@ -9,7 +9,7 @@ interface SEOHeadProps {
   schemaJson?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
-const WEBSITE = "https://tidywisecleaning.com";
+const WEBSITE = "https://www.tidywisecleaning.com";
 const BUSINESS_NAME = "TIDYWISE Cleaning Services";
 const DEFAULT_OG_IMAGE = `${WEBSITE}/og-image.webp`;
 

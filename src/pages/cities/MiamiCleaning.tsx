@@ -13,7 +13,7 @@ const MiamiCleaning = () => {
       <SEOSchema
         pageTitle="Miami House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Miami FL house & condo cleaning you can count on. Brickell, Wynwood, Coconut Grove & Little Havana. Same-day availability. Book now!"
-        canonicalUrl="https://tidywisecleaning.com/miami-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/miami-cleaning"
         pageType="county"
         county="Miami"
       />

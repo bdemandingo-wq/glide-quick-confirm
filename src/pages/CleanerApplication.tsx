@@ -178,7 +178,7 @@ const CleanerApplication = () => {
       <SEOHead
         title="Join Our Cleaning Team | Apply Now | TIDYWISE"
         description="Apply to become a TIDYWISE cleaner. Flexible schedule, competitive pay. Serving Broward, Miami-Dade & Palm Beach County."
-        canonical="https://tidywisecleaning.com/apply"
+        canonical="https://www.tidywisecleaning.com/apply"
       />
     <div className="min-h-screen bg-background">
       {/* Header */}

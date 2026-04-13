@@ -46,7 +46,7 @@ const Index = () => {
       <SEOSchema
         pageTitle="South Florida House Cleaning | Licensed | TIDYWISE"
         pageDescription="Top-rated house cleaning in Fort Lauderdale, Boca Raton & West Palm Beach. 40+ cities. Instant online quotes. Licensed & insured."
-        canonicalUrl="https://tidywisecleaning.com"
+        canonicalUrl="https://www.tidywisecleaning.com"
         pageType="home"
         faqItems={homepageFaqs}
       />

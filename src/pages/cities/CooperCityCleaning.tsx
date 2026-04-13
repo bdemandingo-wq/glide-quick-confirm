@@ -12,7 +12,7 @@ const CooperCityCleaning = () => {
       <SEOSchema
         pageTitle="Cooper City House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Cooper City FL family-focused home cleaning. Rock Creek, Embassy Lakes & Country Glen. Kid-safe & pet-friendly products. Schedule today!"
-        canonicalUrl="https://tidywisecleaning.com/cooper-city-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/cooper-city-cleaning"
         pageType="county"
         county="Cooper City"
       />

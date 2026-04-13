@@ -13,7 +13,7 @@ const FortLauderdaleCleaning = () => {
       <SEOSchema
         pageTitle="Fort Lauderdale House Cleaning | Insured | TIDYWISE"
         pageDescription="Best cleaning in Fort Lauderdale. Licensed & insured house cleaning. Same-day quotes. Serving Las Olas, Victoria Park, Rio Vista. Call (561) 571-8725!"
-        canonicalUrl="https://tidywisecleaning.com/fort-lauderdale-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/fort-lauderdale-cleaning"
         pageType="county"
         county="Fort Lauderdale"
       />

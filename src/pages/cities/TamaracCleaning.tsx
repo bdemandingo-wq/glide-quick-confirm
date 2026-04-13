@@ -12,7 +12,7 @@ const TamaracCleaning = () => {
       <SEOSchema
         pageTitle="Tamarac House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Tamarac FL senior-friendly cleaning services. Woodmont, Colony West & Mainlands. Thorough, dependable & affordable. Schedule your cleaning online!"
-        canonicalUrl="https://tidywisecleaning.com/tamarac-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/tamarac-cleaning"
         pageType="county"
         county="Tamarac"
       />

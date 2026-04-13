@@ -160,7 +160,7 @@ const BookingForm = () => {
       <SEOHead
         title="Book a Cleaning | TIDYWISE"
         description="Complete your cleaning service booking with TIDYWISE. Professional house cleaning in South Florida. Licensed & insured."
-        canonical="https://tidywisecleaning.com/booking"
+        canonical="https://www.tidywisecleaning.com/booking"
         noIndex={true}
       />
     <div className="min-h-screen bg-muted py-12 px-4">

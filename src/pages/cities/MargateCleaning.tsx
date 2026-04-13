@@ -12,7 +12,7 @@ const MargateCleaning = () => {
       <SEOSchema
         pageTitle="Margate House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Margate FL value-priced residential cleaning. Oriole Golf, Coral Gate & Palm Lakes. Weekly, bi-weekly or monthly options. Call (561) 571-8725!"
-        canonicalUrl="https://tidywisecleaning.com/margate-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/margate-cleaning"
         pageType="county"
         county="Margate"
       />

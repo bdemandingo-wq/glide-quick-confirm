@@ -12,7 +12,7 @@ const SunriseCleaning = () => {
       <SEOSchema
         pageTitle="Sunrise House Cleaning | Licensed & Insured | TIDYWISE"
         pageDescription="Sunrise FL reliable cleaning near Sawgrass Mills. Sunrise Lakes & Welleby specialists. Weekly maintenance or one-time deep cleans. Get your quote today!"
-        canonicalUrl="https://tidywisecleaning.com/sunrise-cleaning"
+        canonicalUrl="https://www.tidywisecleaning.com/sunrise-cleaning"
         pageType="county"
         county="Sunrise"
       />
