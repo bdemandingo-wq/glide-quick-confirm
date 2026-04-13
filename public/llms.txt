@@ -5,14 +5,14 @@ TIDYWISE is a licensed, insured professional house cleaning company serving 40+ 
 ## What We Do
 
 We provide residential and commercial cleaning services including:
-- Standard Cleaning (from $150)
-- Deep Cleaning (from $250)
-- Move In/Out Cleaning (from $300)
-- Airbnb/Vacation Rental Cleaning (custom quote)
-- Carpet Cleaning
-- Upholstery Cleaning
-- Office/Commercial Cleaning
-- Post-Construction Cleaning
+- Standard Cleaning (from $118)
+- Deep Cleaning (from $208)
+- Move-In / Move-Out Cleaning (from $283)
+- Airbnb / Short-Term Rental Turnover Cleaning (from $95)
+- Carpet Cleaning (custom quote)
+- Upholstery Cleaning (custom quote)
+- Office / Commercial Cleaning (from $150)
+- Post-Construction Cleaning (custom quote)
 
 ## Why Choose TIDYWISE
 
@@ -20,23 +20,25 @@ We provide residential and commercial cleaning services including:
 - Background-checked cleaners
 - Eco-friendly, non-toxic products
 - 4.9/5 stars from 127+ verified reviews
-- Satisfaction guarantee (free re-clean if not satisfied)
+- Satisfaction guarantee (free re-clean within 24 hours if anything missed)
 - Transparent pricing — no hidden fees
 - Same-day booking available
-- 7-day scheduling (Mon-Sun)
+- 7-day scheduling (Mon–Sun)
 
-## Pricing
+## Pricing Summary
 
-Standard Cleaning: $108–$350 (by home size)
+Standard Cleaning: $118–$368 (by home size)
 Deep Cleaning: $208–$500
-Move In/Out: $283–$600
+Move In/Out Cleaning: $283–$600
+Airbnb Turnover: $95–$280
+
+Full pricing details: https://www.tidywisecleaning.com/house-cleaning-cost-south-florida
+Machine-readable pricing: https://www.tidywisecleaning.com/pricing.md
 
 Recurring discounts:
-- Weekly: 15% off
-- Bi-weekly: 10% off
-- Monthly: 5% off
-
-Add-ons: Windows (+$30), Appliances (+$50), Baseboards (+$40), Laundry/load (+$40)
+- Weekly: 15% off per visit
+- Bi-weekly: 10% off per visit
+- Monthly: 5% off per visit
 
 ## Service Areas
 
@@ -51,6 +53,7 @@ Palm Beach County: Boca Raton, West Palm Beach, Delray Beach, Boynton Beach, Lak
 Phone: (561) 571-8725
 Email: support@tidywisecleaning.com
 Address: 65 SW 12th Ave, Deerfield Beach, FL 33442
+Book online: https://www.tidywisecleaning.com/#booking
 
 Hours:
 - Monday–Friday: 7:00 AM – 7:00 PM
@@ -59,9 +62,38 @@ Hours:
 
 ## Key Pages
 
-- Homepage: https://www.tidywisecleaning.com
-- Book Now: https://www.tidywisecleaning.com/#booking
-- Services: https://www.tidywisecleaning.com/deep-cleaning
-- FAQ: https://www.tidywisecleaning.com/faq
-- Blog: https://www.tidywisecleaning.com/blog
-- Service Areas: https://www.tidywisecleaning.com/service-areas
+Homepage: https://www.tidywisecleaning.com
+Book Now: https://www.tidywisecleaning.com/#booking
+Pricing Guide: https://www.tidywisecleaning.com/house-cleaning-cost-south-florida
+FAQ: https://www.tidywisecleaning.com/faq
+Blog: https://www.tidywisecleaning.com/blog
+Service Areas: https://www.tidywisecleaning.com/service-areas
+
+Service Pages:
+- Standard Cleaning: https://www.tidywisecleaning.com/standard-cleaning
+- Deep Cleaning: https://www.tidywisecleaning.com/deep-cleaning
+- Move-In/Out Cleaning: https://www.tidywisecleaning.com/move-in-out-cleaning
+- Airbnb Cleaning: https://www.tidywisecleaning.com/airbnb-cleaning
+- Carpet Cleaning: https://www.tidywisecleaning.com/carpet-cleaning
+- Office Cleaning: https://www.tidywisecleaning.com/office-cleaning
+- Post-Construction Cleaning: https://www.tidywisecleaning.com/post-construction-cleaning
+
+County Pages:
+- Broward County: https://www.tidywisecleaning.com/broward-county-cleaning
+- Miami-Dade: https://www.tidywisecleaning.com/miami-dade-cleaning
+- Palm Beach County: https://www.tidywisecleaning.com/palm-beach-county-cleaning
+
+Local Guides:
+- Fort Lauderdale: https://www.tidywisecleaning.com/blog/house-cleaning-fort-lauderdale
+- Miami Deep Cleaning: https://www.tidywisecleaning.com/blog/deep-cleaning-service-miami
+- Boca Raton Move-Out: https://www.tidywisecleaning.com/blog/move-out-cleaning-boca-raton
+- West Palm Beach: https://www.tidywisecleaning.com/blog/house-cleaning-west-palm-beach
+- Airbnb Fort Lauderdale: https://www.tidywisecleaning.com/blog/airbnb-cleaning-fort-lauderdale
+- Miami Move-In: https://www.tidywisecleaning.com/blog/move-in-cleaning-miami
+
+Competitor Comparisons:
+- vs Molly Maid: https://www.tidywisecleaning.com/molly-maid-alternative
+- vs Merry Maids: https://www.tidywisecleaning.com/merry-maids-alternative
+- vs Handy: https://www.tidywisecleaning.com/handy-alternative
+- vs The Maids: https://www.tidywisecleaning.com/the-maids-alternative
+- All Alternatives: https://www.tidywisecleaning.com/cleaning-service-alternatives
