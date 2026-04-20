@@ -8,7 +8,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { LogOut, Calendar, DollarSign, Users, Clock, RefreshCw, Trash2, UserCheck, Briefcase, Phone, Mail, MapPin, Car, Shield, Star } from "lucide-react";
+import { LogOut, Calendar, DollarSign, Users, Clock, RefreshCw, Trash2, UserCheck, Briefcase, Phone, Mail, MapPin, Car, Shield, Star, FileText } from "lucide-react";
+import SiteContentManager from "@/components/admin/SiteContentManager";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   AlertDialog,
@@ -321,6 +322,10 @@ const Admin = () => {
                 <Briefcase className="w-4 h-4" />
                 Applicants ({applications.length})
               </TabsTrigger>
+              <TabsTrigger value="content" className="gap-2">
+                <FileText className="w-4 h-4" />
+                Site Content
+              </TabsTrigger>
             </TabsList>
             <Button variant="outline" size="sm" onClick={handleRefresh} disabled={refreshing}>
               <RefreshCw className={`w-4 h-4 mr-2 ${refreshing ? "animate-spin" : ""}`} />
@@ -494,6 +499,9 @@ const Admin = () => {
                 )}
               </CardContent>
             </Card>
+          </TabsContent>
+          <TabsContent value="content">
+            <SiteContentManager />
           </TabsContent>
         </Tabs>
       </main>
