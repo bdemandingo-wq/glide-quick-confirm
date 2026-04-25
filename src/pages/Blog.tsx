@@ -588,7 +588,7 @@ const Blog = () => {
 
             {/* Blog Grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredPosts.map((post) => (
+              {paginatedPosts.map((post) => (
                 <article 
                   key={post.slug}
                   className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow group"
@@ -636,6 +636,54 @@ const Blog = () => {
                 </article>
               ))}
             </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <nav
+                aria-label="Blog pagination"
+                className="flex flex-wrap items-center justify-center gap-2 mt-12"
+              >
+                <button
+                  onClick={() => {
+                    setCurrentPage((p) => Math.max(1, p - 1));
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  disabled={safePage === 1}
+                  className="px-4 py-2 rounded-lg border border-border text-sm font-medium text-foreground hover:bg-muted transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                  aria-label="Previous page"
+                >
+                  Previous
+                </button>
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                  <button
+                    key={page}
+                    onClick={() => {
+                      setCurrentPage(page);
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
+                    aria-current={page === safePage ? "page" : undefined}
+                    className={`min-w-[40px] px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                      page === safePage
+                        ? "bg-primary text-primary-foreground"
+                        : "border border-border text-foreground hover:bg-muted"
+                    }`}
+                  >
+                    {page}
+                  </button>
+                ))}
+                <button
+                  onClick={() => {
+                    setCurrentPage((p) => Math.min(totalPages, p + 1));
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  disabled={safePage === totalPages}
+                  className="px-4 py-2 rounded-lg border border-border text-sm font-medium text-foreground hover:bg-muted transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                  aria-label="Next page"
+                >
+                  Next
+                </button>
+              </nav>
+            )}
           </div>
         </section>
 
