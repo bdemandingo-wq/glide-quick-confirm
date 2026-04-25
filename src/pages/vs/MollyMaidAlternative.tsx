@@ -41,7 +41,7 @@ const MollyMaidAlternative = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="TIDYWISE vs Molly Maid South Florida | Better Local Alternative"
+        pageTitle="Molly Maid Alternative South Florida | TIDYWISE Cleaning"
         pageDescription="Best Molly Maid alternative in South Florida. Transparent pricing, same-day booking & eco-friendly cleaning. Fort Lauderdale, Boca Raton, Miami & 40+ cities."
         canonicalUrl="https://www.tidywisecleaning.com/molly-maid-alternative"
         pageType="service"
@@ -164,6 +164,29 @@ const MollyMaidAlternative = () => {
                 Our 4.9-star rating across 127+ verified reviews reflects what happens when a local team treats every home like it's their own.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Related comparisons & service links */}
+        <section className="py-12 bg-muted/20 border-y">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <p className="text-muted-foreground mb-4">Compare more cleaning options:</p>
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              {[
+                { label: "vs Merry Maids", to: "/merry-maids-alternative" },
+                { label: "vs The Maids", to: "/the-maids-alternative" },
+                { label: "vs Handy", to: "/handy-alternative" },
+                { label: "All Alternatives", to: "/cleaning-service-alternatives" },
+              ].map((l) => (
+                <Link key={l.to} to={l.to} className="text-sm text-primary underline underline-offset-2 hover:opacity-80">{l.label}</Link>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground">
+              See <Link to="/house-cleaning-cost-south-florida" className="text-primary hover:underline">house cleaning costs</Link>, {" "}
+              <Link to="/deep-cleaning" className="text-primary hover:underline">deep cleaning</Link>, {" "}
+              <Link to="/standard-cleaning" className="text-primary hover:underline">standard cleaning</Link>, or our {" "}
+              <Link to="/service-areas" className="text-primary hover:underline">full South Florida service areas</Link>.
+            </p>
           </div>
         </section>
 

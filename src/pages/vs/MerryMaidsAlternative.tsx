@@ -41,7 +41,7 @@ const MerryMaidsAlternative = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="TIDYWISE vs Merry Maids South Florida | Local Cleaning Alternative"
+        pageTitle="Merry Maids Alternative South Florida | TIDYWISE Cleaning"
         pageDescription="Best Merry Maids alternative in South Florida. Instant booking, transparent pricing from $118, eco-friendly cleaning. Fort Lauderdale, Miami, Boca Raton."
         canonicalUrl="https://www.tidywisecleaning.com/merry-maids-alternative"
         pageType="service"
@@ -140,6 +140,29 @@ const MerryMaidsAlternative = () => {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Related comparisons & service links */}
+        <section className="py-12 bg-muted/20 border-y">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <p className="text-muted-foreground mb-4">Compare more cleaning options:</p>
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              {[
+                { label: "vs Molly Maid", to: "/molly-maid-alternative" },
+                { label: "vs The Maids", to: "/the-maids-alternative" },
+                { label: "vs Handy", to: "/handy-alternative" },
+                { label: "All Alternatives", to: "/cleaning-service-alternatives" },
+              ].map((l) => (
+                <Link key={l.to} to={l.to} className="text-sm text-primary underline underline-offset-2 hover:opacity-80">{l.label}</Link>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Browse our <Link to="/service-areas" className="text-primary hover:underline">South Florida service areas</Link> or compare {" "}
+              <Link to="/standard-cleaning" className="text-primary hover:underline">standard</Link>, {" "}
+              <Link to="/deep-cleaning" className="text-primary hover:underline">deep</Link>, and {" "}
+              <Link to="/move-in-out-cleaning" className="text-primary hover:underline">move in/out cleaning</Link> services.
+            </p>
           </div>
         </section>
 
