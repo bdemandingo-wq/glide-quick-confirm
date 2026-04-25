@@ -488,9 +488,12 @@ const staticBlogPosts: BlogPost[] = [
 
 const categories = ["All", "Guides", "Tips", "Seasonal", "Pricing", "Local", "Deals", "Health", "Home Care"];
 
+const POSTS_PER_PAGE = 12;
+
 const Blog = () => {
   const [allPosts, setAllPosts] = useState<BlogPost[]>(staticBlogPosts);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     const fetchAiPosts = async () => {
@@ -524,9 +527,21 @@ const Blog = () => {
     fetchAiPosts();
   }, []);
 
+  // Reset to page 1 when category changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory]);
+
   const filteredPosts = selectedCategory === "All" 
     ? allPosts 
     : allPosts.filter(post => post.category === selectedCategory);
+
+  const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));
+  const safePage = Math.min(currentPage, totalPages);
+  const paginatedPosts = filteredPosts.slice(
+    (safePage - 1) * POSTS_PER_PAGE,
+    safePage * POSTS_PER_PAGE
+  );
 
   return (
     <>
