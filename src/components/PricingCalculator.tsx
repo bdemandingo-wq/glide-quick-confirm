@@ -6,13 +6,7 @@ import { Slider } from "@/components/ui/slider";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-
-const serviceTypes = [
-  { value: "standard", label: "Standard Cleaning", basePrice: 150 },
-  { value: "deep", label: "Deep Cleaning", basePrice: 250 },
-  { value: "moveinout", label: "Move In/Out Cleaning", basePrice: 300 },
-  { value: "commercial", label: "Commercial Cleaning", basePrice: 400 },
-];
+import { useServicePricing, getPriceForSqft } from "@/hooks/useServicePricing";
 
 const frequencies = [
   { value: "onetime", label: "One-Time", discount: 0 },
@@ -33,27 +27,25 @@ const addOns = [
 
 const PricingCalculator = () => {
   const navigate = useNavigate();
+  const { services, loading } = useServicePricing();
   const [sqft, setSqft] = useState([1500]);
   const [serviceType, setServiceType] = useState("standard");
   const [frequency, setFrequency] = useState("onetime");
   const [selectedAddOns, setSelectedAddOns] = useState<string[]>([]);
 
-  const selectedService = serviceTypes.find((s) => s.value === serviceType)!;
+  const selectedService = services.find((s) => s.value === serviceType) || services[0];
   const selectedFrequency = frequencies.find((f) => f.value === frequency)!;
 
   const totalPrice = useMemo(() => {
-    const sqftMultiplier = sqft[0] / 1000;
-    let price = selectedService.basePrice * sqftMultiplier;
+    if (!selectedService) return 0;
+    let price = getPriceForSqft(sqft[0], selectedService.tiers);
 
-    // Add add-ons
     const addOnTotal = selectedAddOns.reduce((sum, id) => {
       const addOn = addOns.find((a) => a.id === id);
       return sum + (addOn?.price || 0);
     }, 0);
 
     price += addOnTotal;
-
-    // Apply frequency discount
     price = price * (1 - selectedFrequency.discount);
 
     return price;
@@ -70,7 +62,7 @@ const PricingCalculator = () => {
       state: {
         sqft: sqft[0],
         beds: `${sqft[0].toLocaleString()} sq ft`,
-        serviceType: selectedService.label,
+        serviceType: selectedService?.label || "Standard Cleaning",
         frequency: selectedFrequency.label,
         addOns: selectedAddOns.map(id => addOns.find(a => a.id === id)?.label).filter(Boolean),
         totalPrice: totalPrice.toFixed(2),
@@ -118,12 +110,12 @@ const PricingCalculator = () => {
             {/* Service Type */}
             <div className="space-y-2">
               <Label className="text-base font-medium">Service Type</Label>
-              <Select value={serviceType} onValueChange={setServiceType}>
+              <Select value={serviceType} onValueChange={setServiceType} disabled={loading || services.length === 0}>
                 <SelectTrigger>
-                  <SelectValue />
+                  <SelectValue placeholder={loading ? "Loading..." : "Select service"} />
                 </SelectTrigger>
                 <SelectContent>
-                  {serviceTypes.map((service) => (
+                  {services.map((service) => (
                     <SelectItem key={service.value} value={service.value}>
                       {service.label}
                     </SelectItem>
@@ -152,7 +144,9 @@ const PricingCalculator = () => {
             {/* Price Display */}
             <div className="bg-primary/5 rounded-lg p-6 text-center">
               <p className="text-muted-foreground mb-2">Estimated Price</p>
-              <p className="text-4xl font-bold text-primary">${totalPrice.toFixed(2)}</p>
+              <p className="text-4xl font-bold text-primary">
+                {loading ? "—" : `$${totalPrice.toFixed(2)}`}
+              </p>
               <p className="text-sm text-muted-foreground mt-1">+ add-ons</p>
             </div>
 
@@ -188,6 +182,7 @@ const PricingCalculator = () => {
               size="lg"
               className="w-full text-lg font-semibold"
               onClick={handleBooking}
+              disabled={loading || !selectedService}
             >
               Book This Service
             </Button>
