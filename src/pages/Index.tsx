@@ -44,9 +44,9 @@ const Index = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="TIDYWISE House Cleaning | Miami & Fort Lauderdale FL"
-        pageDescription="Book trusted house cleaning across Fort Lauderdale, Miami, Boca Raton & 40+ South Florida cities. Licensed & insured teams, eco-friendly, from $108."
-        canonicalUrl="https://www.tidywisecleaning.com"
+        pageTitle="House Cleaning South Florida | TidyWise Cleaning"
+        pageDescription="Top-rated house cleaning in Deerfield Beach, Boca Raton, Fort Lauderdale & all of South Florida. 4.9★ rated. Book online or call (561) 571-8725."
+        canonicalUrl="https://www.tidywisecleaning.com/"
         pageType="home"
         faqItems={homepageFaqs}
       />
