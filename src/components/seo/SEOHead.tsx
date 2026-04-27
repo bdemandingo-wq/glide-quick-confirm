@@ -13,6 +13,22 @@ const WEBSITE = "https://www.tidywisecleaning.com";
 const BUSINESS_NAME = "TIDYWISE Cleaning Services";
 const DEFAULT_OG_IMAGE = `${WEBSITE}/og-image.webp`;
 
+/**
+ * Force every canonical URL to the www apex (https://www.tidywisecleaning.com).
+ * Accepts absolute URLs (www or non-www, http or https) and relative paths.
+ * This guarantees Google never sees a non-www canonical, even if a caller
+ * passes a stale value or a relative path.
+ */
+const normalizeCanonical = (input: string): string => {
+  if (!input) return WEBSITE;
+  // Strip protocol + any host variant (www / non-www, http / https) to get the path
+  const path = input
+    .replace(/^https?:\/\/(www\.)?tidywisecleaning\.com/i, "")
+    .replace(/^https?:\/\/[^/]+/i, ""); // any other accidental host
+  const cleanPath = path.startsWith("/") || path === "" ? path : `/${path}`;
+  return `${WEBSITE}${cleanPath}`;
+};
+
 const SEOHead = ({
   title,
   description,
@@ -22,6 +38,7 @@ const SEOHead = ({
   schemaJson,
 }: SEOHeadProps) => {
   const image = ogImage || DEFAULT_OG_IMAGE;
+  const canonicalUrl = normalizeCanonical(canonical);
   const robotsContent = noIndex
     ? "noindex, nofollow"
     : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
@@ -36,13 +53,13 @@ const SEOHead = ({
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="canonical" href={canonical} />
+      <link rel="canonical" href={canonicalUrl} />
       <meta name="robots" content={robotsContent} />
 
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={canonical} />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={image} />
       <meta property="og:image:width" content="1200" />
@@ -58,8 +75,8 @@ const SEOHead = ({
       <meta name="twitter:image" content={image} />
 
       {/* Hreflang */}
-      <link rel="alternate" hrefLang="en-us" href={canonical} />
-      <link rel="alternate" hrefLang="x-default" href={canonical} />
+      <link rel="alternate" hrefLang="en-us" href={canonicalUrl} />
+      <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
 
       {/* Schema JSON-LD */}
       {schemas.map((schema, i) => (
