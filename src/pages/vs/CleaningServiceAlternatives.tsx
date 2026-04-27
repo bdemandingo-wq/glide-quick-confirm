@@ -98,8 +98,8 @@ const CleaningServiceAlternatives = () => {
   return (
     <>
       <SEOSchema
-        pageTitle="Best South Florida House Cleaning Services Compared"
-        pageDescription="Comparing house cleaning services in South Florida? TIDYWISE vs Molly Maid, Merry Maids, Handy, TaskRabbit — honest pros, cons & pricing for each."
+        pageTitle="Best Cleaning Service Alternatives 2026 | TidyWise"
+        pageDescription="Comparing cleaning services in South Florida? See why TidyWise beats Handy, Molly Maid & local competitors. 4.9★ rated, transparent pricing, vetted cleaners."
         canonicalUrl="https://www.tidywisecleaning.com/cleaning-service-alternatives"
         pageType="service"
         faqItems={faqItems}
