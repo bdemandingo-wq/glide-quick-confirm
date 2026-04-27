@@ -1,11 +1,19 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect, useMemo } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Sparkles } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SEOSchema from "@/components/seo/SEOSchema";
 import StickyCallButton from "@/components/seo/StickyCallButton";
 import { supabase } from "@/integrations/supabase/client";
+
+// Parse "Month YYYY" or ISO date strings to a sortable timestamp
+const parsePostDate = (s: string): number => {
+  const t = Date.parse(s);
+  if (!isNaN(t)) return t;
+  const t2 = Date.parse(`1 ${s}`);
+  return isNaN(t2) ? 0 : t2;
+};
 
 interface BlogPost {
   slug: string;
