@@ -166,6 +166,7 @@ const AirbnbCleaning = lazy(() => import("./pages/AirbnbCleaning"));
 const OfficeCleaning = lazy(() => import("./pages/OfficeCleaning"));
 const PostConstructionCleaning = lazy(() => import("./pages/PostConstructionCleaning"));
 const Sitemap = lazy(() => import("./pages/Sitemap"));
+const Reviews = lazy(() => import("./pages/Reviews"));
 
 const queryClient = new QueryClient();
 
@@ -201,6 +202,7 @@ const AppRoutes = () => {
         <Route path="/office-cleaning" element={<OfficeCleaning />} />
         <Route path="/post-construction-cleaning" element={<PostConstructionCleaning />} />
         <Route path="/sitemap" element={<Sitemap />} />
+        <Route path="/reviews" element={<Reviews />} />
         
         {/* County Landing Pages */}
         <Route path="/broward-county-cleaning" element={<BrowardCountyCleaning />} />

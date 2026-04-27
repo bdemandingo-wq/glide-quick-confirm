@@ -78,6 +78,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm">
               <li><Link to="/service-areas" className="text-background/70 hover:text-background transition-colors">Service Areas</Link></li>
               <li><Link to="/faq" className="text-background/70 hover:text-background transition-colors">FAQ</Link></li>
+              <li><Link to="/reviews" className="text-background/70 hover:text-background transition-colors">Customer Reviews</Link></li>
               <li><Link to="/blog" className="text-background/70 hover:text-background transition-colors">Blog & Tips</Link></li>
               <li><Link to="/house-cleaning-cost-south-florida" className="text-background/70 hover:text-background transition-colors">Pricing Guide</Link></li>
               <li><Link to="/cleaning-service-alternatives" className="text-background/70 hover:text-background transition-colors">Compare Services</Link></li>
