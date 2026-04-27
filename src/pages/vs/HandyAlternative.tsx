@@ -42,7 +42,7 @@ const HandyAlternative = () => {
     <>
       <SEOSchema
         pageTitle="Handy Alternative South Florida | TIDYWISE House Cleaning"
-        pageDescription="Looking for a Handy alternative in South Florida? TIDYWISE offers insured teams, eco-friendly products & flat-rate pricing from $108. Book online today."
+        pageDescription="Looking for a Handy alternative in South Florida? TidyWise offers vetted cleaners, transparent pricing, and 4.9★ service. Book online or call (561) 571-8725."
         canonicalUrl="https://www.tidywisecleaning.com/handy-alternative"
         pageType="service"
         faqItems={faqItems}
