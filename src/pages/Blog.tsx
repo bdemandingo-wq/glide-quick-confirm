@@ -501,7 +501,16 @@ const POSTS_PER_PAGE = 12;
 const Blog = () => {
   const [allPosts, setAllPosts] = useState<BlogPost[]>(staticBlogPosts);
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [currentPage, setCurrentPage] = useState(1);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const pageParam = parseInt(searchParams.get("page") || "1", 10);
+  const currentPage = Number.isFinite(pageParam) && pageParam > 0 ? pageParam : 1;
+
+  const setCurrentPage = (page: number) => {
+    const next = new URLSearchParams(searchParams);
+    if (page <= 1) next.delete("page");
+    else next.set("page", String(page));
+    setSearchParams(next, { replace: false });
+  };
 
   useEffect(() => {
     const fetchAiPosts = async () => {
@@ -537,12 +546,19 @@ const Blog = () => {
 
   // Reset to page 1 when category changes
   useEffect(() => {
-    setCurrentPage(1);
+    if (currentPage !== 1) setCurrentPage(1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCategory]);
 
-  const filteredPosts = selectedCategory === "All" 
-    ? allPosts 
-    : allPosts.filter(post => post.category === selectedCategory);
+  // Sort posts by date (newest first) before filtering/paginating
+  const sortedPosts = useMemo(
+    () => [...allPosts].sort((a, b) => parsePostDate(b.date) - parsePostDate(a.date)),
+    [allPosts]
+  );
+
+  const filteredPosts = selectedCategory === "All"
+    ? sortedPosts
+    : sortedPosts.filter(post => post.category === selectedCategory);
 
   const totalPages = Math.max(1, Math.ceil(filteredPosts.length / POSTS_PER_PAGE));
   const safePage = Math.min(currentPage, totalPages);
@@ -550,6 +566,27 @@ const Blog = () => {
     (safePage - 1) * POSTS_PER_PAGE,
     safePage * POSTS_PER_PAGE
   );
+
+  // Inject rel="prev" / rel="next" into <head> for paginated pages
+  useEffect(() => {
+    const base = "https://www.tidywisecleaning.com/blog";
+    const ensureLink = (rel: "prev" | "next", href: string | null) => {
+      let el = document.head.querySelector<HTMLLinkElement>(`link[rel="${rel}"]`);
+      if (!href) { el?.remove(); return; }
+      if (!el) {
+        el = document.createElement("link");
+        el.rel = rel;
+        document.head.appendChild(el);
+      }
+      el.href = href;
+    };
+    ensureLink("prev", safePage > 1 ? (safePage - 1 === 1 ? base : `${base}?page=${safePage - 1}`) : null);
+    ensureLink("next", safePage < totalPages ? `${base}?page=${safePage + 1}` : null);
+    return () => {
+      document.head.querySelector('link[rel="prev"]')?.remove();
+      document.head.querySelector('link[rel="next"]')?.remove();
+    };
+  }, [safePage, totalPages]);
 
   return (
     <>
