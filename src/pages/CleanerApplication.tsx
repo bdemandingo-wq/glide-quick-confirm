@@ -204,7 +204,7 @@ const CleanerApplication = () => {
 
         <header className="mb-8">
           <h1 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Apply to Join the TIDYWISE Cleaning Team in South Florida
+            Apply to Become a TidyWise Cleaner in South Florida
           </h1>
           <p className="text-muted-foreground mb-4">
             TIDYWISE is hiring experienced, reliable cleaning professionals across{" "}
