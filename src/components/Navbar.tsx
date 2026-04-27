@@ -46,6 +46,7 @@ const Navbar = () => {
     { href: "/#services", label: "Services", isDropdown: true },
     { href: "/#booking", label: "Pricing", isScroll: true },
     { href: "/service-areas", label: "Areas", isRoute: true },
+    { href: "/reviews", label: "Reviews", isRoute: true },
     { href: "/blog", label: "Blog", isRoute: true },
     { href: "/faq", label: "FAQ", isRoute: true },
   ];
@@ -197,6 +198,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Service Areas
+              </Link>
+              <Link
+                to="/reviews"
+                className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Reviews
               </Link>
               <Link
                 to="/blog"
