@@ -204,7 +204,7 @@ const CleanerApplication = () => {
 
         <header className="mb-8">
           <h1 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Apply to Join the TIDYWISE Cleaning Team in South Florida
+            Apply to Become a TidyWise Cleaner in South Florida
           </h1>
           <p className="text-muted-foreground mb-4">
             TIDYWISE is hiring experienced, reliable cleaning professionals across{" "}
@@ -247,6 +247,29 @@ const CleanerApplication = () => {
             <Link to="/service-areas" className="text-primary hover:underline">South Florida service areas</Link> page.
           </p>
         </header>
+
+        <section className="max-w-3xl mx-auto px-4 py-8">
+          <h2 className="text-2xl font-semibold mb-4">Join the TidyWise Cleaning Team</h2>
+          <p className="mb-4">
+            TidyWise is hiring professional cleaners across South Florida — including Deerfield Beach, Boca Raton, Fort Lauderdale, Pompano Beach, Coral Springs, and surrounding Broward and Palm Beach County areas. We're looking for reliable, detail-oriented cleaners who take pride in their work and want to grow with a fast-growing cleaning company.
+          </p>
+          <h3 className="text-xl font-semibold mt-6 mb-3">Why Cleaners Choose TidyWise</h3>
+          <ul className="list-disc pl-6 mb-4 space-y-2">
+            <li><strong>Competitive pay</strong> — Earn weekly with transparent payment terms</li>
+            <li><strong>Flexible scheduling</strong> — Work when you want, where you want</li>
+            <li><strong>Steady client base</strong> — We bring the bookings, you bring the quality</li>
+            <li><strong>Supportive team</strong> — Real support from real people, not bots</li>
+            <li><strong>Growth opportunities</strong> — Top performers get more bookings and bonuses</li>
+          </ul>
+          <h3 className="text-xl font-semibold mt-6 mb-3">What We Look For</h3>
+          <p className="mb-4">
+            We hire cleaners with experience in residential cleaning, attention to detail, reliable transportation, and a positive attitude. Whether you're an experienced house cleaner or transitioning from another industry with strong work ethic, we want to hear from you.
+          </p>
+          <h3 className="text-xl font-semibold mt-6 mb-3">How to Apply</h3>
+          <p className="mb-4">
+            Fill out the application below. We review every application within 48 hours and reach out to qualified candidates for a brief phone interview. If selected, you'll complete a quick onboarding and start receiving cleaning jobs in your area.
+          </p>
+        </section>
 
         <Card>
           <CardHeader className="text-center">
@@ -458,6 +481,17 @@ const CleanerApplication = () => {
             </form>
           </CardContent>
         </Card>
+
+        <section className="max-w-3xl mx-auto px-4 py-8 border-t mt-8">
+          <h3 className="text-xl font-semibold mb-4">Learn More About TidyWise</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li><Link to="/" className="text-primary hover:underline">About TidyWise Cleaning Services</Link></li>
+            <li><Link to="/reviews" className="text-primary hover:underline">See Our 4.9★ Customer Reviews</Link></li>
+            <li><Link to="/deerfield-beach-cleaning" className="text-primary hover:underline">Cleaning Services in Deerfield Beach</Link></li>
+            <li><Link to="/fort-lauderdale-cleaning" className="text-primary hover:underline">Cleaning Services in Fort Lauderdale</Link></li>
+            <li><Link to="/boca-raton-cleaning" className="text-primary hover:underline">Cleaning Services in Boca Raton</Link></li>
+          </ul>
+        </section>
       </main>
     </div>
     </>
