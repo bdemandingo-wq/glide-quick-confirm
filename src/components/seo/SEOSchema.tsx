@@ -164,6 +164,10 @@ const SEOSchema = ({
   additionalSchema
 }: SEOSchemaProps) => {
   const isHome = pageType === 'home';
+  // Normalize incoming canonical to guarantee www apex everywhere downstream
+  // (canonical link, og:url, hreflang, JSON-LD @id/url, breadcrumbs).
+  // eslint-disable-next-line no-param-reassign
+  canonicalUrl = normalizeCanonical(canonicalUrl);
 
   // Build breadcrumb schema
   const breadcrumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
